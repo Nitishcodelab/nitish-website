@@ -9,7 +9,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "यहाँ Firebase की API key",
+    apiKey: "AIza...",
     authDomain: "nitish-website.firebaseapp.com",
     projectId: "nitish-website",
     storageBucket: "nitish-website.firebasestorage.app",
@@ -40,7 +40,7 @@ loginForm.addEventListener("submit", async function(event) {
         await signInWithEmailAndPassword(auth, email, password);
         alert("Login successful! 🎉");
     } catch (error) {
-        alert("Login failed. Email या password check करें।");
+    alert("Login failed: " + error.code);
     }
 });
 
