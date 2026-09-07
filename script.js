@@ -9,12 +9,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "AIza...",
-    authDomain: "nitish-website.firebaseapp.com",
-    projectId: "nitish-website",
-    storageBucket: "nitish-website.firebasestorage.app",
-    messagingSenderId: "1035429607659",
-    appId: "1:1035429607659:web:a71a0fca2e722102a5e6ae"
+  apiKey: "यहाँ अपनी Firebase API key डालो",
+  authDomain: "...",
+  projectId: "...",
+  storageBucket: "...",
+  messagingSenderId: "...",
+  appId: "..."
 };
 
 const app = initializeApp(firebaseConfig);
