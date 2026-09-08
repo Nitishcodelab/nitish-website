@@ -1,5 +1,5 @@
 body {
-    background: #eef2ff
+    background: #f4f7ff
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -36,6 +36,7 @@ button {
     font-size: 18px;
     border-radius: 8px;
     border: none;
+    background: #2563eb;
     cursor: pointer;
 }
 
@@ -102,7 +103,7 @@ body > form:last-of-type button {
 }
 /* Professional Navigation */
 nav {
-    background: #222;
+    background: #172554;
     padding: 15px 10px;
     border-radius: 12px;
     margin: 0 auto 40px;
@@ -175,6 +176,8 @@ body > p:first-of-type {
     border: 1px solid #ddd;
     border-radius: 15px;
     box-sizing: border-box;
+    box-shadow: 04px 15px rgba(0, 0,
+    0, 0.08);                           
 }
 
 .about-box h2 {
