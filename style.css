@@ -116,3 +116,16 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+/* Main Heading */
+h1 {
+    margin: 20px auto;
+    max-width: 900px;
+    line-height: 1.2;
+}
+
+/* Intro Text */
+body > p:first-of-type {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
