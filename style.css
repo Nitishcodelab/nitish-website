@@ -88,3 +88,11 @@ body > form:last-of-type input {
 body > form:last-of-type button {
     width: 100%;
 }
+/* Services */
+#services {
+    margin-top: 50px;
+}
+
+#services + p {
+    margin-top: 25px;
+}
