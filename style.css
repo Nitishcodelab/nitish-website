@@ -96,3 +96,23 @@ body > form:last-of-type button {
 #services + p {
     margin-top: 25px;
 }
+/* Professional Navigation */
+nav {
+    background: #222;
+    padding: 15px 10px;
+    border-radius: 12px;
+    margin: 0 auto 40px;
+    max-width: 900px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
