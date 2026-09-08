@@ -129,3 +129,32 @@ body > p:first-of-type {
     margin: 0 auto 40px;
     line-height: 1.6;
 }
+/* Service Cards */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.service-card {
+    width: 210px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
