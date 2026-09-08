@@ -196,6 +196,8 @@ body > p:first-of-type {
     border: 1px solid #ddd;
     border-radius: 15px;
     box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0,
+    0, 0.08);                            
 }
 
 .skills-box h2 {
@@ -224,6 +226,8 @@ body > p:first-of-type {
     border: 1px solid #ddd;
     border-radius: 15px;
     box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0,
+    0, 0.08);                            
 }
 
 .contact-box h2 {
