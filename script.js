@@ -9,7 +9,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "तुम्हारी Firebase API key",
+  apiKey: "AIzaSyAuS1ECRUsfQSC7HCrChNhLV87LEmNqYto",
   authDomain: "...",
   projectId: "...",
   storageBucket: "...",
