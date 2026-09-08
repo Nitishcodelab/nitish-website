@@ -230,3 +230,7 @@ transition: transform 0.2s ease;
 .contact-box form {
     margin-top: 25px;
 }
+#login {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    }
