@@ -158,3 +158,21 @@ body > p:first-of-type {
     font-size: 16px;
     line-height: 1.5;
 }
+/* About Box */
+.about-box {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.about-box h2 {
+    margin-top: 0;
+}
+
+.about-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
