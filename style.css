@@ -148,7 +148,7 @@ body > p:first-of-type {
     border-radius: 15px;
     box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 .service-card:hover {
     transform: translateY(-5px);
