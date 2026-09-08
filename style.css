@@ -18,6 +18,8 @@ nav a {
 button:hover {
     transform: translateY(-2px);
 }
+button {
+    transition: all 0.2s ease;
 
 h1 {
     font-size: 40px;
@@ -92,6 +94,11 @@ body > form:last-of-type input {
 
 body > form:last-of-type button {
     width: 100%;
+    body > form:last-of-type button {
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    }
 }
 /* Services */
 #services {
