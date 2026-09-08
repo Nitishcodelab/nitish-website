@@ -1,3 +1,7 @@
+/* =========================
+   Main Website
+========================= */
+
 body {
     background: #eef2ff;
     margin: 0;
@@ -6,23 +10,39 @@ body {
     padding-top: 30px;
 }
 
+/* =========================
+   Navigation
+========================= */
+
 nav {
-    margin-bottom: 40px;
+    background: #172554;
+    padding: 15px 10px;
+    border-radius: 12px;
+    margin: 0 auto 40px;
+    max-width: 900px;
 }
 
 nav a {
-    margin: 10px;
+    color: white;
+    margin: 0 12px;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
 }
-button:hover {
-    transform: translateY(-2px);
+
+nav a:hover {
+    text-decoration: underline;
 }
-button {
-    transition: all 0.2s ease;
+
+/* =========================
+   Headings & Text
+========================= */
 
 h1 {
     font-size: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    line-height: 1.2;
 }
 
 h2 {
@@ -33,14 +53,34 @@ p {
     font-size: 20px;
 }
 
+body > p:first-of-type {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* =========================
+   Buttons
+========================= */
+
 button {
     padding: 12px 25px;
     font-size: 18px;
     border-radius: 8px;
     border: none;
     background: #2563eb;
+    color: white;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   Forms
+========================= */
 
 form {
     margin-top: 20px;
@@ -62,86 +102,14 @@ textarea {
     resize: vertical;
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 30px;
-    }
+/* =========================
+   Services
+========================= */
 
-    nav a {
-        display: block;
-        margin: 12px;
-    }
-
-    input,
-    textarea {
-        width: 90%;
-    }
-}
-/* Login Box */
-body > form:last-of-type {
-    max-width: 400px;
-    margin: 20px auto 40px;
-    padding: 25px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-sizing: border-box;
-}
-
-body > form:last-of-type input {
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-body > form:last-of-type button {
-    width: 100%;
-    body > form:last-of-type button {
-    background: #2563eb;
-    color: white;
-    font-weight: bold;
-    }
-}
-/* Services */
 #services {
     margin-top: 50px;
 }
 
-#services + p {
-    margin-top: 25px;
-}
-/* Professional Navigation */
-nav {
-    background: #172554;
-    padding: 15px 10px;
-    border-radius: 12px;
-    margin: 0 auto 40px;
-    max-width: 900px;
-}
-
-nav a {
-    color: white;
-    margin: 0 12px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-/* Main Heading */
-h1 {
-    margin: 20px auto;
-    max-width: 900px;
-    line-height: 1.2;
-}
-
-/* Intro Text */
-body > p:first-of-type {
-    max-width: 700px;
-    margin: 0 auto 40px;
-    line-height: 1.6;
-}
-/* Service Cards */
 .services-container {
     display: flex;
     flex-wrap: wrap;
@@ -158,14 +126,16 @@ body > p:first-of-type {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 15px;
-    background: #eef2ff;
+    background: white;
     box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease;
 }
+
 .service-card:hover {
     transform: translateY(-5px);
 }
+
 .service-card h3 {
     font-size: 20px;
     margin-top: 0;
@@ -175,16 +145,20 @@ body > p:first-of-type {
     font-size: 16px;
     line-height: 1.5;
 }
-/* About Box */
+
+/* =========================
+   About Box
+========================= */
+
 .about-box {
     max-width: 700px;
     margin: 30px auto;
     padding: 25px;
     border: 1px solid #ddd;
     border-radius: 15px;
+    background: white;
     box-sizing: border-box;
-    box-shadow: 0 4px 15px rgba(0, 0,
-    0, 0.08);                           
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .about-box h2 {
@@ -195,16 +169,20 @@ body > p:first-of-type {
     font-size: 18px;
     line-height: 1.6;
 }
-/* Skills Box */
+
+/* =========================
+   Skills Box
+========================= */
+
 .skills-box {
     max-width: 700px;
     margin: 30px auto;
     padding: 25px;
     border: 1px solid #ddd;
     border-radius: 15px;
+    background: white;
     box-sizing: border-box;
-    box-shadow: 0 4px 15px rgba(0, 0,
-    0, 0.08);                            
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .skills-box h2 {
@@ -225,16 +203,20 @@ body > p:first-of-type {
     font-size: 17px;
     font-weight: bold;
 }
-/* Contact Box */
+
+/* =========================
+   Contact Box
+========================= */
+
 .contact-box {
     max-width: 700px;
     margin: 40px auto;
     padding: 25px;
     border: 1px solid #ddd;
     border-radius: 15px;
+    background: white;
     box-sizing: border-box;
-    box-shadow: 0 4px 15px rgba(0, 0,
-    0, 0.08);                            
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .contact-box h2 {
@@ -249,13 +231,72 @@ body > p:first-of-type {
 .contact-box form {
     margin-top: 25px;
 }
+
+/* =========================
+   Login Box
+========================= */
+
 #login {
     margin-top: 50px;
     margin-bottom: 20px;
-    }
+}
+
+body > form:last-of-type {
+    max-width: 400px;
+    margin: 20px auto 40px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+body > form:last-of-type input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+body > form:last-of-type button {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+
+/* =========================
+   Footer
+========================= */
+
 footer {
     margin-top: 50px;
     padding: 20px;
     font-size: 15px;
     border-top: 1px solid #ddd;
 }
+
+/* =========================
+   Mobile Friendly
+========================= */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 12px;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: 350px;
+    }
+    }
