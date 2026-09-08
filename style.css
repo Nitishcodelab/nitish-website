@@ -176,7 +176,7 @@ body > p:first-of-type {
     border: 1px solid #ddd;
     border-radius: 15px;
     box-sizing: border-box;
-    box-shadow: 04px 15px rgba(0, 0,
+    box-shadow: 0 4px 15px rgba(0, 0,
     0, 0.08);                           
 }
 
