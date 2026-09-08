@@ -176,3 +176,31 @@ body > p:first-of-type {
     font-size: 18px;
     line-height: 1.6;
 }
+/* Skills Box */
+.skills-box {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.skills-box h2 {
+    margin-top: 0;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skill-list span {
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
