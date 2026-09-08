@@ -14,6 +14,9 @@ nav a {
     text-decoration: none;
     font-size: 18px;
 }
+button:hover {
+    transform: translateY(-2px);
+}
 
 h1 {
     font-size: 40px;
