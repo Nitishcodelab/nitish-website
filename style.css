@@ -204,3 +204,25 @@ body > p:first-of-type {
     font-size: 17px;
     font-weight: bold;
 }
+/* Contact Box */
+.contact-box {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.contact-box h2 {
+    margin-top: 0;
+}
+
+.contact-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-box form {
+    margin-top: 25px;
+}
