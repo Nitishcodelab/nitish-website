@@ -48,9 +48,24 @@ loginForm.addEventListener("submit", async function(event) {
 });
 
 onAuthStateChanged(auth, function(user) {
+    const logoutButton = document.getElementById("logoutButton");
+
     if (user) {
         console.log("User logged in:", user.email);
+        logoutButton.style.display = "block";
     } else {
         console.log("No user logged in");
+        logoutButton.style.display = "none";
+    }
+});
+
+const logoutButton = document.getElementById("logoutButton");
+
+logoutButton.addEventListener("click", async function() {
+    try {
+        await signOut(auth);
+        alert("Logout successful!");
+    } catch (error) {
+        alert("Logout failed: " + error.code);
     }
 });
