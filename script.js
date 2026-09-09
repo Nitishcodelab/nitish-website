@@ -54,15 +54,3 @@ onAuthStateChanged(auth, function(user) {
         console.log("No user logged in");
     }
 });
-const contactForm = document.getElementById("contactForm");
-
-if (contactForm) {
-    contactForm.onsubmit = function(event) {
-        event.preventDefault();
-
-        alert("Message sent successfully! 🎉");
-
-        contactForm.reset();
-        return false;
-    };
-}
