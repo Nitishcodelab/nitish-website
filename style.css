@@ -65,6 +65,7 @@ body > p:first-of-type {
 
 button {
     padding: 12px 25px;
+    margin: 5px;
     font-size: 18px;
     border-radius: 8px;
     border: none;
@@ -76,6 +77,7 @@ button {
 
 button:hover {
     transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* =========================
