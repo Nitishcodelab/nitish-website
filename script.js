@@ -1,3 +1,4 @@
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
 
 import {
@@ -55,10 +56,13 @@ onAuthStateChanged(auth, function(user) {
 });
 const contactForm = document.getElementById("contactForm");
 
-contactForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+if (contactForm) {
+    contactForm.onsubmit = function(event) {
+        event.preventDefault();
 
-    alert("Message sent successfully! 🎉");
+        alert("Message sent successfully! 🎉");
 
-    contactForm.reset();
-});
+        contactForm.reset();
+        return false;
+    };
+}
