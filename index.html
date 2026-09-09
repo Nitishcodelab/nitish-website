@@ -1,102 +1,247 @@
 <!DOCTYPE html>
+<html lang="hi">
 
-<html>
 <head>
-    <title>Nitish Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nitish Digital Services</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-   <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-   </nav>
+    <!-- =========================
+         Navigation
+    ========================== -->
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- =========================
+         Main Heading
+    ========================== -->
 
     <h1>Welcome to Nitish Digital Services 🚀</h1>
-<p>हम आपके business के लिए सुंदर और mobile-friendly websites बनाते हैं।</p>
+
+    <p>
+        हम आपके business के लिए सुंदर और mobile-friendly websites बनाते हैं।
+    </p>
+
+
+    <!-- =========================
+         About
+    ========================== -->
 
     <div class="about-box">
-    <h2 id="about">👨‍💻 About Me</h2>
-    <p>मैं Nitish हूँ और मैं coding सीख रहा हूँ।</p>
-    <p>मेरा लक्ष्य लोगों और businesses के लिए useful और सुंदर websites बनाना है।</p>
+
+        <h2 id="about">👨‍💻 About Me</h2>
+
+        <p>
+            मैं Nitish हूँ और मैं coding सीख रहा हूँ।
+        </p>
+
+        <p>
+            मेरा लक्ष्य लोगों और businesses के लिए useful और सुंदर websites बनाना है।
+        </p>
+
     </div>
+
+
+    <!-- =========================
+         Skills
+    ========================== -->
 
     <div class="skills-box">
-    <h2 id="skills">💻 My Skills</h2>
 
-    <div class="skill-list">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>AI</span>
+        <h2 id="skills">💻 My Skills</h2>
+
+        <div class="skill-list">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>AI</span>
+
+        </div>
+
     </div>
-    </div>
+
+
+    <!-- =========================
+         Services
+    ========================== -->
 
     <h2 id="services">🚀 Our Services</h2>
 
-<div class="services-container">
+    <div class="services-container">
 
-    <div class="service-card">
-        <h3>🌐 Business Website</h3>
-        <p>आपके business के लिए सुंदर website।</p>
+        <div class="service-card">
+
+            <h3>🌐 Business Website</h3>
+
+            <p>
+                आपके business के लिए सुंदर website।
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <h3>📱 Mobile-Friendly Website</h3>
+
+            <p>
+                Mobile पर अच्छी तरह चलने वाली website।
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <h3>⚡ JavaScript Features</h3>
+
+            <p>
+                Website में useful interactive features।
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <h3>🤖 AI Website Solutions</h3>
+
+            <p>
+                AI की मदद से smart website solutions।
+            </p>
+
+        </div>
+
     </div>
 
-    <div class="service-card">
-        <h3>📱 Mobile-Friendly Website</h3>
-        <p>Mobile पर अच्छी तरह चलने वाली website।</p>
-    </div>
 
-    <div class="service-card">
-        <h3>⚡ JavaScript Features</h3>
-        <p>Website में useful interactive features।</p>
-    </div>
-
-    <div class="service-card">
-        <h3>🤖 AI Website Solutions</h3>
-        <p>AI की मदद से smart website solutions।</p>
-    </div>
-
-</div>
+    <!-- =========================
+         Contact
+    ========================== -->
 
     <div class="contact-box">
-    <h2 id="contact">📩 Contact</h2>
-    <p>मुझसे संपर्क करने के लिए नीचे अपना message भेजें।</p>
 
-    <form id="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <br><br>
+        <h2 id="contact">📩 Contact</h2>
 
-        <input type="email" placeholder="Your Email" required>
-        <br><br>
+        <p>
+            मुझसे संपर्क करने के लिए नीचे अपना message भेजें।
+        </p>
 
-        <textarea placeholder="Your Message" required></textarea>
-        <br><br>
 
-        <button type="submit">Send Message</button>
-    </form>
+        <form id="contactForm">
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            >
+
+            <br><br>
+
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <br><br>
+
+
+            <textarea
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <br><br>
+
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
     </div>
 
-    <button onclick="hello()">Click Me</button>
 
-  <p id="message"></p>
+    <!-- =========================
+         JavaScript Test
+    ========================== -->
 
-<h2 id="login">🔐 Login</h2>
-<form>
-    <input type="email" placeholder="Email" required>
-    <br><br>
+    <button onclick="hello()">
+        Click Me
+    </button>
 
-    <input type="password" placeholder="Password" required>
-    <br><br>
+    <p id="message"></p>
 
-    <button type="submit">Login</button>
-</form>
-<footer>
-    © 2026 Nitish Digital Services — All Rights Reserved
-</footer>
-<script type="module" src="script.js"></script>
+
+    <!-- =========================
+         Login
+    ========================== -->
+
+    <h2 id="login">🔐 Login</h2>
+
+    <form>
+
+        <input
+            type="email"
+            placeholder="Email"
+            required
+        >
+
+        <br><br>
+
+
+        <input
+            type="password"
+            placeholder="Password"
+            required
+        >
+
+        <br><br>
+
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer>
+
+        © 2026 Nitish Digital Services — All Rights Reserved
+
+    </footer>
+
+
+    <!-- =========================
+         JavaScript
+    ========================== -->
+
+    <script
+        type="module"
+        src="script.js">
+    </script>
 
 </body>
+
 </html>
