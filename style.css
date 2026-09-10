@@ -339,3 +339,27 @@ button:active {
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
+/* Mobile Button Improvement */
+
+@media (max-width: 600px) {
+    button {
+        width: auto;
+        min-height: 44px;
+        padding: 12px 20px;
+    }
+
+    .service-card button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.service-card {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .services-container {
+        gap: 25px;
+    }
+}
