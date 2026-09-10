@@ -363,3 +363,13 @@ button:active {
         gap: 25px;
     }
 }
+footer h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 8px 0;
+}
