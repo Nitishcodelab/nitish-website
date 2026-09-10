@@ -308,3 +308,9 @@ footer {
     font-size: 18px;
     line-height: 1.6;
 }
+.hero-text {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px auto 15px;
+    line-height: 1.5;
+}
