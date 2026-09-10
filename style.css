@@ -321,3 +321,11 @@ footer {
 .service-card p {
     margin: 8px 0;
 }
+button {
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.97);
+}
