@@ -374,3 +374,11 @@ footer p {
     line-height: 1.5;
     margin: 8px 0;
 }
+/* Hero Section */
+.hero-text {
+    max-width: 700px;
+    margin: 10px auto 30px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5;
+}
