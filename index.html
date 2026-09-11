@@ -343,80 +343,148 @@
     </div>
     
     <!-- =========================
-         Contact
-    ========================== -->
+     Contact
+========================== -->
 
-    <div class="contact-box">
+<div class="contact-box">
 
-        <h2 id="contact">📩 Contact</h2>
+    <h2 id="contact">📩 Contact Us</h2>
 
-        <p>
-    Website या service के बारे में जानकारी के लिए हमसे संपर्क करें।
-        </p>
+    <p>
+        Website या service के बारे में जानकारी के लिए हमसे संपर्क करें।
+    </p>
 
-        <p>
-    📩 अपना नाम, email और जरूरत की जानकारी भेजें — हम आपसे संपर्क करेंगे।
-       </p>
+    <p>
+        📩 अपना नाम, email और जरूरत की जानकारी भेजें —
+        हम आपसे संपर्क करेंगे।
+    </p>
 
+    <form
+        id="contactForm"
+        action="https://formspree.io/f/xrpgodjd"
+        method="POST"
+    >
 
-        <form id="contactForm" 
-        action="https://formspree.io/f/xrpgodjd" method="POST">
+        <!-- Name -->
+        <label for="name">👤 Your Name</label>
 
-            <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                required
-            >
-            <select name="service" required>
-    <option value="">Select a Service</option>
-    <option value="Business Website">🌐 Business Website</option>
-    <option value="Mobile-Friendly Website">📱 Mobile-Friendly Website</option>
-    <option value="JavaScript Features">⚡ JavaScript Features</option>
-    <option value="AI Website Solutions">🤖 AI Website Solutions</option>
-    <option value="Modern Website Design">🎨 Modern Website Design</option>
-    <option value="Website Updates">🛠️ Website Updates</option>
-</select>
+        <br>
 
-<br><br>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+        >
 
-            <br><br>
+        <br><br>
 
 
-            <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-            >
+        <!-- Service -->
+        <label for="service">🛠️ Select a Service</label>
 
-            <br><br>
+        <br>
+
+        <select
+            id="service"
+            name="service"
+            required
+        >
+
+            <option value="">Select a Service</option>
+
+            <option value="Business Website">
+                🌐 Business Website
+            </option>
+
+            <option value="Mobile-Friendly Website">
+                📱 Mobile-Friendly Website
+            </option>
+
+            <option value="JavaScript Features">
+                ⚡ JavaScript Features
+            </option>
+
+            <option value="AI Website Solutions">
+                🤖 AI Website Solutions
+            </option>
+
+            <option value="Modern Website Design">
+                🎨 Modern Website Design
+            </option>
+
+            <option value="Website Updates">
+                🛠️ Website Updates
+            </option>
+
+        </select>
+
+        <br><br>
 
 
-            <textarea
-                name="message"
-                placeholder="Your Message"
-                required
-            ></textarea>
+        <!-- Email -->
+        <label for="email">📧 Your Email</label>
 
-            <br><br>
+        <br>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <br><br>
 
 
-            <button type="submit">
-                Send Message
-            </button>
+        <!-- Message -->
+        <label for="message">💬 Your Message</label>
 
-        </form>
+        <br>
 
-<a href="https://wa.me/918757342062" target="_blank">
-    <button type="button">💬 WhatsApp पर संपर्क करें</button>
-</a>
+        <textarea
+            id="message"
+            name="message"
+            placeholder="Tell us about your requirement"
+            required
+        ></textarea>
 
-<a href="tel:+918757342062">
-    <button type="button">📞 Call Now</button>
-</a>
+        <br><br>
 
-    </div>
+
+        <!-- Submit -->
+        <button type="submit">
+            📩 Send Message
+        </button>
+
+    </form>
+
+
+    <!-- WhatsApp -->
+    <a
+        href="https://wa.me/918757342062"
+        target="_blank"
+    >
+
+        <button type="button">
+            💬 WhatsApp पर संपर्क करें
+        </button>
+
+    </a>
+
+
+    <!-- Call -->
+    <a href="tel:+918757342062">
+
+        <button type="button">
+            📞 Call Now
+        </button>
+
+    </a>
+
+</div>
 
     <!-- =========================
          JavaScript Test
