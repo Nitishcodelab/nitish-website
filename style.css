@@ -382,3 +382,48 @@ footer p {
     font-weight: bold;
     line-height: 1.5;
 }
+/* =========================
+   Contact Form Design
+========================== */
+
+.contact-box label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.contact-box input,
+.contact-box select,
+.contact-box textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: white;
+}
+
+.contact-box select {
+    cursor: pointer;
+}
+
+.contact-box input:focus,
+.contact-box select:focus,
+.contact-box textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.25);
+}
+
+@media (max-width: 600px) {
+
+    .contact-box input,
+    .contact-box select,
+    .contact-box textarea {
+        width: 90%;
+    }
+
+}
