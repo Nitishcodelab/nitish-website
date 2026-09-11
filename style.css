@@ -374,3 +374,8 @@ footer p {
     line-height: 1.5;
     margin: 8px 0;
 }
+.hero-text {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px auto 30px;
+}
