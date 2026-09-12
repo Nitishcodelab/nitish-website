@@ -513,3 +513,12 @@ footer p {
 #faq + .section-subtitle {
     margin-bottom: 30px;
 }
+/* =========================
+   Footer Copyright
+========================== */
+
+.footer-copy {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.75;
+}
