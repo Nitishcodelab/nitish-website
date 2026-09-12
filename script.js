@@ -1,4 +1,3 @@
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
 
 import {
@@ -11,7 +10,7 @@ import {
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAuS1ECRUsfQSC7HCrChNhLV87LEmNqYto",
+  apiKey: "YOUR_FIREBASE_API_KEY",
   authDomain: "nitish-website.firebaseapp.com",
   projectId: "nitish-website",
   storageBucket: "nitish-website.firebasestorage.app",
@@ -43,7 +42,7 @@ loginForm.addEventListener("submit", async function(event) {
         await signInWithEmailAndPassword(auth, email, password);
         alert("Login successful! 🎉");
     } catch (error) {
-    alert("Login failed: " + error.code);
+        alert("Login failed: " + error.code);
     }
 });
 
@@ -68,4 +67,18 @@ logoutButton.addEventListener("click", async function() {
     } catch (error) {
         alert("Logout failed: " + error.code);
     }
+});
+
+
+// =========================
+// Back To Top
+// =========================
+
+const backToTop = document.getElementById("backToTop");
+
+backToTop.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
