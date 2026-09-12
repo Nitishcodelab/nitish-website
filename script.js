@@ -10,7 +10,7 @@ import {
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "YOUR_FIREBASE_API_KEY",
+  apiKey: "AIzaSyAuS1ECRUsfQSC7HCrChNhLV87LEmNqYto",
   authDomain: "nitish-website.firebaseapp.com",
   projectId: "nitish-website",
   storageBucket: "nitish-website.firebasestorage.app",
