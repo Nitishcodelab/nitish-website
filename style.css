@@ -522,3 +522,21 @@ footer p {
     font-size: 14px;
     opacity: 0.75;
 }
+/* =========================
+   Mobile Spacing
+========================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
