@@ -472,3 +472,32 @@ footer p {
     }
 
 }
+/* =========================
+   Call To Action
+========================== */
+
+.cta-box {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 35px 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cta-box h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.cta-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-box button {
+    font-weight: bold;
+}
