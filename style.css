@@ -541,11 +541,13 @@ footer p {
 
 }
 /* =========================
-   Main Section Text Color
+   Hero Text
 ========================= */
 
-#hero h1,
-#hero p,
-main > h2 {
+#hero h1 {
+    color: black;
+}
+
+#hero p {
     color: black;
 }
