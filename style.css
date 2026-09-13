@@ -545,6 +545,7 @@ footer p {
 ========================= */
 
 #hero h1,
+#hero p,
 main > h2 {
     color: white;
 }
