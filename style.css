@@ -548,6 +548,557 @@ footer p {
     color: black;
 }
 
+/* =========================
+   Main Website
+========================= */
+
+body {
+    background: #ffcOcb;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* =========================
+   Navigation
+========================= */
+
+nav {
+    background: #172554;
+    padding: 15px 10px;
+    border-radius: 12px;
+    margin: 0 auto 40px;
+    max-width: 900px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Headings & Text
+========================= */
+
+h1 {
+    font-size: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    line-height: 1.2;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+body > p:first-of-type {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+button {
+    padding: 12px 25px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   Forms
+========================= */
+
+form {
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* =========================
+   Services
+========================= */
+
+#services {
+    margin-top: 50px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.service-card {
+    width: 210px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* =========================
+   About Box
+========================= */
+
+.about-box {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.about-box h2 {
+    margin-top: 0;
+}
+
+.about-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* =========================
+   Skills Box
+========================= */
+
+.skills-box {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.skills-box h2 {
+    margin-top: 0;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skill-list span {
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* =========================
+   Contact Box
+========================= */
+
+.contact-box {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-box h2 {
+    margin-top: 0;
+}
+
+.contact-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-box form {
+    margin-top: 25px;
+}
+
+/* =========================
+   Login Box
+========================= */
+
+#login {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+body > form:last-of-type {
+    max-width: 400px;
+    margin: 20px auto 40px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+body > form:last-of-type input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+body > form:last-of-type button {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 15px;
+    border-top: 1px solid #ddd;
+}
+
+/* =========================
+   Mobile Friendly
+========================= */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 12px;
+        padding: 8px 0;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: 350px;
+    }
+    }
+.section-subtitle {
+    max-width: 700px;
+    margin: 10px auto 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.hero-text {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px auto 15px;
+    line-height: 1.5;
+}
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin: 8px 0;
+}
+button {
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+.login-box {
+    max-width: 400px;
+    margin: 30px auto 40px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+/* Mobile Button Improvement */
+
+@media (max-width: 600px) {
+    button {
+        width: auto;
+        min-height: 44px;
+        padding: 12px 20px;
+    }
+
+    .service-card button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.service-card {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .services-container {
+        gap: 25px;
+    }
+}
+footer h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+/* Hero Section */
+.hero-text {
+    max-width: 700px;
+    margin: 10px auto 30px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+/* =========================
+   Contact Form Design
+========================== */
+
+.contact-box label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.contact-box input,
+.contact-box select,
+.contact-box textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: white;
+}
+
+.contact-box select {
+    cursor: pointer;
+}
+
+.contact-box input:focus,
+.contact-box select:focus,
+.contact-box textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.25);
+}
+
+@media (max-width: 600px) {
+
+    .contact-box input,
+    .contact-box select,
+    .contact-box textarea {
+        width: 90%;
+    }
+
+}
+/* =========================
+   Trust Highlights
+========================== */
+
+.trust-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto 50px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.trust-card {
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.trust-card h3 {
+    font-size: 19px;
+    margin-top: 0;
+}
+
+.trust-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .trust-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+}
+/* =========================
+   Call To Action
+========================== */
+
+.cta-box {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 35px 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cta-box h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.cta-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-box button {
+    font-weight: bold;
+}
+/* =========================
+   FAQ Section
+========================== */
+
+#faq {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#faq + .section-subtitle {
+    margin-bottom: 30px;
+}
+/* =========================
+   Footer Copyright
+========================== */
+
+.footer-copy {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.75;
+}
+/* =========================
+   Mobile Spacing
+========================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+/* =========================
+   Hero Text
+========================= */
+
+#hero h1 {
+    color: black;
+}
+
 #hero p {
     color: #BE185D !
+   important;
 }
