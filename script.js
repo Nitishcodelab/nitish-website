@@ -29,8 +29,7 @@ function hello() {
 
 window.hello = hello;
 
-const forms = document.querySelectorAll("form");
-const loginForm = forms[1];
+const loginForm = document.getElementById("loginForm");
 
 loginForm.addEventListener("submit", async function(event) {
     event.preventDefault();
