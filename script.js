@@ -9,19 +9,26 @@ import {
     signOut
 } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js";
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// =========================
+// Firebase Configuration
+// =========================
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAuS1ECRUsfQSC7HCrChNhLV87LEmNqYto",
-  authDomain: "nitish-website.firebaseapp.com",
-  projectId: "nitish-website",
-  storageBucket: "nitish-website.firebasestorage.app",
-  messagingSenderId: "1035429607659",
-  appId: "1:1035429607659:web:a71a0fca2e722102a5e6ae",
-  measurementId: "G-LM97DLSJ1Z"
+    apiKey: "अपनी पुरानी Firebase apiKey यहाँ रखें",
+    authDomain: "nitish-website.firebaseapp.com",
+    projectId: "nitish-website",
+    storageBucket: "nitish-website.firebasestorage.app",
+    messagingSenderId: "1035429607659",
+    appId: "1:1035429607659:web:a71a0fca2e722102a5e6ae",
+    measurementId: "G-LM97DLSJ1Z"
 };
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+
+// =========================
+// Hello Button
+// =========================
 
 function hello() {
     document.getElementById("message").innerText =
@@ -29,6 +36,10 @@ function hello() {
 }
 
 window.hello = hello;
+
+// =========================
+// Login
+// =========================
 
 const loginForm = document.getElementById("loginForm");
 
@@ -42,7 +53,8 @@ loginForm.addEventListener("submit", async function(event) {
         await signInWithEmailAndPassword(auth, email, password);
         alert("Login successful! 🎉");
     } catch (error) {
-        alert("Login failed: " + error.code);
+        alert("❌ Login failed: " + error.code);
+        console.log(error);
     }
 });
 
@@ -52,7 +64,7 @@ loginForm.addEventListener("submit", async function(event) {
 
 const signupButton = document.getElementById("signupButton");
 
-signupButton.addEventListener("click", async function () {
+signupButton.addEventListener("click", async function() {
     const email = prompt("अपना Email डालिए:");
     const password = prompt("अपना Password डालिए:");
 
@@ -79,9 +91,10 @@ signupButton.addEventListener("click", async function () {
 // Forgot Password
 // =========================
 
-const forgotPasswordButton = document.getElementById("forgotPasswordButton");
+const forgotPasswordButton =
+    document.getElementById("forgotPasswordButton");
 
-forgotPasswordButton.addEventListener("click", async function () {
+forgotPasswordButton.addEventListener("click", async function() {
     const email = prompt("अपना Email डालिए:");
 
     if (!email) {
@@ -93,45 +106,59 @@ forgotPasswordButton.addEventListener("click", async function () {
         await sendPasswordResetEmail(auth, email);
         alert("Password reset email भेज दिया गया है। 📧");
     } catch (error) {
-        alert("Password reset failed: " + error.code);
+        alert("❌ Password reset failed: " + error.code);
+        console.log(error);
     }
 });
+
+// =========================
+// Login State
+// =========================
 
 onAuthStateChanged(auth, function(user) {
-    const logoutButton = document.getElementById("logoutButton");
+    const logoutButton =
+        document.getElementById("logoutButton");
+
+    const userInfo =
+        document.getElementById("userInfo");
 
     if (user) {
-    console.log("User logged in:", user.email);
-    loginForm.style.display = "none";
+        console.log("User logged in:", user.email);
 
-    const userInfo = document.getElementById("userInfo");
-    userInfo.innerText = "👋 Welcome! " + user.email;
-    userInfo.style.display = "block";
+        loginForm.style.display = "none";
+        signupButton.style.display = "none";
 
-    logoutButton.style.display = "block";
-} else {
+        userInfo.innerText =
+            "👋 Welcome! " + user.email;
 
-    signupButton.style.display = "inline-block";
+        userInfo.style.display = "block";
+        logoutButton.style.display = "block";
 
-    loginForm.style.display = "block";
-        
-    const userInfo = document.getElementById("userInfo");
-    userInfo.style.display = "none";
+    } else {
+        loginForm.style.display = "block";
+        signupButton.style.display = "inline-block";
 
-    console.log("No user logged in");
-        
-    logoutButton.style.display = "none";
+        userInfo.style.display = "none";
+        logoutButton.style.display = "none";
+
+        console.log("No user logged in");
     }
 });
 
-const logoutButton = document.getElementById("logoutButton");
+// =========================
+// Logout
+// =========================
+
+const logoutButton =
+    document.getElementById("logoutButton");
 
 logoutButton.addEventListener("click", async function() {
     try {
         await signOut(auth);
         alert("Logout successful!");
     } catch (error) {
-        alert("❌ Email या password गलत है।");
+        alert("❌ Logout failed: " + error.code);
+        console.log(error);
     }
 });
 
@@ -139,10 +166,13 @@ logoutButton.addEventListener("click", async function() {
 // Show / Hide Password
 // =========================
 
-const showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
-const passwordInput = loginForm.querySelector('input[type="password"]');
+const showPasswordCheckbox =
+    document.getElementById("showPasswordCheckbox");
 
-showPasswordCheckbox.addEventListener("change", function () {
+const passwordInput =
+    loginForm.querySelector('input[type="password"]');
+
+showPasswordCheckbox.addEventListener("change", function() {
     if (showPasswordCheckbox.checked) {
         passwordInput.type = "text";
     } else {
@@ -150,17 +180,16 @@ showPasswordCheckbox.addEventListener("change", function () {
     }
 });
 
-
 // =========================
 // Back To Top
 // =========================
 
-const backToTop = document.getElementById("backToTop");
+const backToTop =
+    document.getElementById("backToTop");
 
-backToTop.addEventListener("click", function () {
+backToTop.addEventListener("click", function() {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 });
-
