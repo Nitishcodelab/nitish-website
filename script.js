@@ -3,6 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/fireba
 import {
     getAuth,
     signInWithEmailAndPassword,
+    sendPasswordResetEmail,
     createUserWithEmailAndPassword,
     onAuthStateChanged,
     signOut
@@ -65,6 +66,28 @@ signupButton.addEventListener("click", async function () {
         alert("Account created successfully! 🎉");
     } catch (error) {
         alert("Signup failed: " + error.code);
+    }
+});
+
+// =========================
+// Forgot Password
+// =========================
+
+const forgotPasswordButton = document.getElementById("forgotPasswordButton");
+
+forgotPasswordButton.addEventListener("click", async function () {
+    const email = prompt("अपना Email डालिए:");
+
+    if (!email) {
+        alert("Email जरूरी है।");
+        return;
+    }
+
+    try {
+        await sendPasswordResetEmail(auth, email);
+        alert("Password reset email भेज दिया गया है। 📧");
+    } catch (error) {
+        alert("Password reset failed: " + error.code);
     }
 });
 
