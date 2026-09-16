@@ -96,6 +96,7 @@ onAuthStateChanged(auth, function(user) {
 
     if (user) {
     console.log("User logged in:", user.email);
+    loginForm.style.display = "none";
 
     const userInfo = document.getElementById("userInfo");
     userInfo.innerText = "👋 Welcome! " + user.email;
