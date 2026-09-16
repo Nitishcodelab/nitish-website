@@ -45,6 +45,29 @@ loginForm.addEventListener("submit", async function(event) {
     }
 });
 
+// =========================
+// Create Account
+// =========================
+
+const signupButton = document.getElementById("signupButton");
+
+signupButton.addEventListener("click", async function () {
+    const email = prompt("अपना Email डालिए:");
+    const password = prompt("अपना Password डालिए:");
+
+    if (!email || !password) {
+        alert("Email और Password दोनों जरूरी हैं।");
+        return;
+    }
+
+    try {
+        await createUserWithEmailAndPassword(auth, email, password);
+        alert("Account created successfully! 🎉");
+    } catch (error) {
+        alert("Signup failed: " + error.code);
+    }
+});
+
 onAuthStateChanged(auth, function(user) {
     const logoutButton = document.getElementById("logoutButton");
 
