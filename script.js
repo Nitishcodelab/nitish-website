@@ -65,7 +65,7 @@ signupButton.addEventListener("click", async function () {
         await createUserWithEmailAndPassword(auth, email, password);
         alert("Account created successfully! 🎉");
     } catch (error) {
-        alert("Signup failed: " + error.code);
+        alert("❌ Account नहीं बन पाया। Email पहले से registered हो सकता है या जानकारी गलत है।");
     }
 });
 
@@ -125,7 +125,7 @@ logoutButton.addEventListener("click", async function() {
         await signOut(auth);
         alert("Logout successful!");
     } catch (error) {
-        alert("Logout failed: " + error.code);
+        alert("❌ Email या password गलत है।");
     }
 });
 
