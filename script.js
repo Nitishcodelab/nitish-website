@@ -142,11 +142,7 @@ const showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
 const passwordInput = loginForm.querySelector('input[type="password"]');
 
 showPasswordCheckbox.addEventListener("change", function () {
-    if (showPasswordCheckbox.checked) {
-        passwordInput.type = "text";
-    } else {
-        passwordInput.type = "password";
-    }
+    passwordInput.type = showPasswordCheckbox.checked ? "text" : "password";
 });
 
 
