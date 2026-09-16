@@ -104,10 +104,14 @@ onAuthStateChanged(auth, function(user) {
 
     logoutButton.style.display = "block";
 } else {
+
+    loginForm.style.display = "block";
+        
     const userInfo = document.getElementById("userInfo");
     userInfo.style.display = "none";
 
     console.log("No user logged in");
+        
     logoutButton.style.display = "none";
     }
 });
