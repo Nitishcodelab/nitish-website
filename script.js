@@ -40,7 +40,8 @@ loginForm.addEventListener("submit", async function(event) {
         await signInWithEmailAndPassword(auth, email, password);
         alert("Login successful! 🎉");
     } catch (error) {
-        alert("❌ Email या Password गलत है।");
+        console.log(error);
+        alert("❌ Login failed: " + error.code);
     }
 });
 
