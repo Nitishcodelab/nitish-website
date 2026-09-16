@@ -134,6 +134,24 @@ logoutButton.addEventListener("click", async function() {
     }
 });
 
+// =========================
+// Show / Hide Password
+// =========================
+
+const showPasswordButton = document.getElementById("showPasswordButton");
+
+showPasswordButton.addEventListener("click", function () {
+    const passwordInput = loginForm.querySelector('input[type="password"]');
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        showPasswordButton.innerText = "🙈 Hide Password";
+    } else {
+        passwordInput.type = "password";
+        showPasswordButton.innerText = "👁️ Show Password";
+    }
+});
+
 
 // =========================
 // Back To Top
