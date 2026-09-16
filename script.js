@@ -62,17 +62,18 @@ signupButton.addEventListener("click", async function () {
     }
 
     if (password.length < 6) {
-    alert("❌ Password कम से कम 6 characters का होना चाहिए।");
-    return;
+        alert("❌ Password कम से कम 6 characters का होना चाहिए।");
+        return;
     }
 
     try {
-    await signInWithEmailAndPassword(auth, email, password);
-    alert("Login successful! 🎉");
-} catch (error) {
-    alert("❌ Login failed: " + error.code);
-    console.log(error);
+        await createUserWithEmailAndPassword(auth, email, password);
+        alert("Account created successfully! 🎉");
+    } catch (error) {
+        alert("❌ Account नहीं बन पाया। " + error.code);
+        console.log(error);
     }
+});
 
 // =========================
 // Forgot Password
@@ -162,3 +163,4 @@ backToTop.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+
