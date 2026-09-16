@@ -61,6 +61,11 @@ signupButton.addEventListener("click", async function () {
         return;
     }
 
+    if (password.length < 6) {
+    alert("❌ Password कम से कम 6 characters का होना चाहिए।");
+    return;
+    }
+
     try {
         await createUserWithEmailAndPassword(auth, email, password);
         alert("Account created successfully! 🎉");
