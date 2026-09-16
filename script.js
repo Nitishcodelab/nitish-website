@@ -139,10 +139,9 @@ logoutButton.addEventListener("click", async function() {
 // =========================
 
 const showPasswordButton = document.getElementById("showPasswordButton");
+const passwordInput = loginForm.querySelector('input[type="password"]');
 
 showPasswordButton.addEventListener("click", function () {
-    const passwordInput = loginForm.querySelector('input[type="password"]');
-
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
         showPasswordButton.innerText = "🙈 Hide Password";
