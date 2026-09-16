@@ -10,7 +10,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "अपनी पहले वाली apiKey यहाँ रहने दें",
+  apiKey: "AIzaSyAuS1ECRUsfQSC7HCrChNhLV87LEmNqYto",
   authDomain: "nitish-website.firebaseapp.com",
   projectId: "nitish-website",
   storageBucket: "nitish-website.firebasestorage.app",
