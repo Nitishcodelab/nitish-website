@@ -67,12 +67,12 @@ signupButton.addEventListener("click", async function () {
     }
 
     try {
-        await createUserWithEmailAndPassword(auth, email, password);
-        alert("Account created successfully! 🎉");
-    } catch (error) {
-        alert("❌ Account नहीं बन पाया। Email पहले से registered हो सकता है या जानकारी गलत है।");
+    await signInWithEmailAndPassword(auth, email, password);
+    alert("Login successful! 🎉");
+} catch (error) {
+    alert("❌ Login failed: " + error.code);
+    console.log(error);
     }
-});
 
 // =========================
 // Forgot Password
