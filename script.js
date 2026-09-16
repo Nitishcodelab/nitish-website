@@ -95,11 +95,19 @@ onAuthStateChanged(auth, function(user) {
     const logoutButton = document.getElementById("logoutButton");
 
     if (user) {
-        console.log("User logged in:", user.email);
-        logoutButton.style.display = "block";
-    } else {
-        console.log("No user logged in");
-        logoutButton.style.display = "none";
+    console.log("User logged in:", user.email);
+
+    const userInfo = document.getElementById("userInfo");
+    userInfo.innerText = "👋 Welcome! " + user.email;
+    userInfo.style.display = "block";
+
+    logoutButton.style.display = "block";
+} else {
+    const userInfo = document.getElementById("userInfo");
+    userInfo.style.display = "none";
+
+    console.log("No user logged in");
+    logoutButton.style.display = "none";
     }
 });
 
