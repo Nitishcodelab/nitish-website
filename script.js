@@ -138,16 +138,14 @@ logoutButton.addEventListener("click", async function() {
 // Show / Hide Password
 // =========================
 
-const showPasswordButton = document.getElementById("showPasswordButton");
+const showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
 const passwordInput = loginForm.querySelector('input[type="password"]');
 
-showPasswordButton.addEventListener("click", function () {
-    if (passwordInput.type === "password") {
+showPasswordCheckbox.addEventListener("change", function () {
+    if (showPasswordCheckbox.checked) {
         passwordInput.type = "text";
-        showPasswordButton.innerText = "🙈 Hide Password";
     } else {
         passwordInput.type = "password";
-        showPasswordButton.innerText = "👁️ Show Password";
     }
 });
 
