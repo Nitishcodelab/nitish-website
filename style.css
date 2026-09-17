@@ -1102,3 +1102,39 @@ footer p {
     color: #BE185D !
    important;
 }
+
+/* =========================
+   Services Section
+========================= */
+
+.services-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    margin-bottom: 25px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.service-card {
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin: 0;
+    line-height: 1.6;
+}
