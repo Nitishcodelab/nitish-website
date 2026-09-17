@@ -1153,3 +1153,17 @@ footer p {
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+
+/* =========================
+   WhatsApp Button Fix
+========================= */
+
+a.whatsapp-button {
+    display: inline-block !important;
+    padding: 12px 22px !important;
+    margin: 25px 10px !important;
+    border-radius: 25px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+}
