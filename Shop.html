@@ -3,19 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Nitish Clothing Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f5f5f5;
+        }
+
+        header {
+            padding: 30px 15px;
+            background: #222;
+            color: white;
+        }
+
+        section {
+            padding: 30px 15px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .product h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #25D366;
+            color: white;
+        }
+
+        footer {
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>👕 Nitish Clothing Store</h1>
+    <header>
+        <h1>👕 Nitish Clothing Store</h1>
+        <p>Stylish कपड़े • अच्छी Quality • उचित कीमत</p>
+    </header>
 
-    <p>आपके लिए नए और अच्छे कपड़ों का संग्रह।</p>
+    <section>
+        <h2>🛍️ Our Products</h2>
 
-    <h2>🛍️ Products</h2>
+        <div class="products">
 
-    <h3>👔 Men's Shirt</h3>
-    <p>Stylish और comfortable shirt</p>
-    <p>₹499 से शुरू</p>
+            <div class="product">
+                <h3>👔 Men's Shirt</h3>
+                <p>Stylish और comfortable shirt</p>
+                <p class="price">₹499 से शुरू</p>
+            </div>
 
-    <h3>👗 Women's
+            <div class="product">
+                <h3>👗 Women's Dress</h3>
+                <p>Simple और attractive dress</p>
+                <p class="price">₹799 से शुरू</p>
+            </div>
+
+            <div class="product">
+                <h3>👖 Jeans</h3>
+                <p>Comfortable और modern jeans</p>
+                <p class="price">₹699 से शुरू</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>📞 Contact Us</h2>
+        <p>कपड़ों की जानकारी और order के लिए संपर्क करें।</p>
+
+        <a class="whatsapp" href="https://wa.me/" target="_blank">
+            💬 WhatsApp पर Contact करें
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Nitish Clothing Store</p>
+    </footer>
+
+</body>
+</html>
