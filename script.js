@@ -30,6 +30,8 @@ window.hello = hello;
 
 const loginForm = document.getElementById("loginForm");
 
+console.log("Login form ready");
+
 loginForm.addEventListener("submit", async function(event) {
     event.preventDefault();
 
