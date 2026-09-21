@@ -1,10 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-    <title>Test Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amar Saha | General & Electrical Shop</title>
+
+    <meta
+        name="description"
+        content="Amar Saha Shop - Electrical items, sewing items, stationery, religious pictures and other useful products."
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        nav {
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 5px 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .product-card {
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .contact-box {
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            margin: 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>👕 Nitish Clothing Store</h1>
-    <p>Website test सफल है।</p>
+
+    <!-- =========================
+         Home
+    ========================== -->
+
+    <header id="home">
+        <h1>🏪 Amar Saha</h1>
+
+        <p>
+            आपकी जरूरत के कई उपयोगी सामान
+            एक ही जगह पर।
+        </p>
+
+        <a href="#products" class="button">
+            🛍️ Products देखें
+        </a>
+
+        <a href="#contact" class="button">
+            📞 Contact करें
+        </a>
+    </header>
+
+
+    <!-- =========================
+         Navigation
+    ========================== -->
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- =========================
+         Products
+    ========================== -->
+
+    <section id="products">
+
+        <h2>🛍️ हमारे Products</h2>
+
+        <div class="products">
+
+            <div class="product-card">
+                <h3>💡 Bulb</h3>
+                <p>Bulb और lighting items</p>
+            </div>
+
+            <div class="product-card">
+                <h3>🔌 तार</h3>
+                <p>Electrical तार</p>
+            </div>
+
+            <div class="product-card">
+                <h3>🔘 Switch</h3>
+                <p>Electrical switches</p>
+            </div>
+
+            <div class="product-card">
+                <h3>⚡ Switch Board</h3>
+                <p>Switch board और related items</p>
+            </div>
+
+            <div class="product-card">
+                <h3>🌀 Fan</h3>
+                <p>Fan और related items</p>
+            </div>
+
+            <div class="product-card">
+                <h3>🔧 Motor</h3>
+                <p>Motor और related items</p>
+            </div>
+
+            <div class="product-card">
+                <h3>🧵 सिलाई का सामान</h3>
+                <p>कपड़ा सिलने का सामान</p>
+            </div>
+
+            <div class="product-card">
+                <h3>👚 Blouse</h3>
+                <p>Blouse और संबंधित सामान</p>
+            </div>
+
+            <div class="product-card">
+                <h3>📚 Copy-किताब</h3>
+                <p>Stationery और पढ़ाई का सामान</p>
+            </div>
+
+            <div class="product-card">
+                <h3>🛕 भगवान की तस्वीर</h3>
+                <p>भगवान की तस्वीर और लटकाने वाली तस्वीर</p>
+            </div>
+
+            <div class="product-card">
+                <h3>🛍️ अन्य सामान</h3>
+                <p>अन्य उपयोगी सामान</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         About
+    ========================== -->
+
+    <section id="about">
+
+        <h2>ℹ️ About Amar Saha</h2>
+
+        <p>
+            Amar Saha की दुकान पर electrical items,
+            सिलाई का सामान, stationery,
+            भगवान की तस्वीर और अन्य उपयोगी सामान
+            उपलब्ध हैं।
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         Contact
+    ========================== -->
+
+    <section id="contact">
+
+        <h2>📞 Contact Us</h2>
+
+        <div class="contact-box">
+
+            <h3>🏪 Amar Saha</h3>
+
+            <p>
+                📍 <strong>Address:</strong><br>
+                Kelabari, Kelabari, Radhanagar,
+                Sahibganj, Jharkhand – 816101
+            </p>
+
+            <p>
+                📞 <strong>Phone:</strong><br>
+                दुकान के दिए गए नंबर पर संपर्क करें।
+            </p>
+
+            <a
+                href="https://wa.me/919693426320"
+                target="_blank"
+                class="button"
+            >
+                💬 WhatsApp पर Contact करें
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer>
+
+        <h3>🏪 Amar Saha</h3>
+
+        <p>
+            © 2026 Amar Saha — All Rights Reserved
+        </p>
+
+    </footer>
+
 </body>
 </html>
