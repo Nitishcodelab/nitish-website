@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shree Mithai Bhandar | Fresh Sweets & Gifts</title>
+
+  <meta name="description"
+    content="Fresh मिठाइयाँ, त्योहारों के लिए मिठाई और gift boxes. Shree Mithai Bhandar.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf3;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #7b1e1e;
+      color: white;
+      padding: 15px 5%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 12px rgba(0,0,0,.15);
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #fff0c9, #ffe0b2);
+      text-align: center;
+      padding: 75px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      color: #7b1e1e;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-main {
+      background: #7b1e1e;
+      color: white;
+    }
+
+    .btn-whatsapp {
+      background: #198754;
+      color: white;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 55px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      color: #7b1e1e;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .search-box {
+      max-width: 500px;
+      margin: 0 auto 25px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
+      transition: .2s;
+    }
+
+    .product:hover {
+      transform: translateY(-4px);
+    }
+
+    .sweet-icon {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    .product h3 {
+      color: #7b1e1e;
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .gallery-box {
+      height: 180px;
+      border-radius: 12px;
+      background: #f2d7a5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #7b1e1e;
+      font-weight: bold;
+      padding: 15px;
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .review {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    }
+
+    .stars {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .review small {
+      color: #777;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .info-card {
+      background: white;
+      padding: 25px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    }
+
+    .info-card h3 {
+      color: #7b1e1e;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      background: #fff0d0;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 25px auto 0;
+      display: grid;
+      gap: 12px;
+      text-align: left;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    form button {
+      background: #7b1e1e;
+      color: white;
+      border: none;
+      padding: 13px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .map {
+      margin-top: 20px;
+      background: #eee;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .map a {
+      color: #7b1e1e;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #3e1010;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 850px) {
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .reviews,
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .products,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">🍬 Shree Mithai Bhandar</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Mithai</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <h1>हर खुशी में मिठास 🍬</h1>
+
+  <p>
+    ताज़ी और स्वादिष्ट मिठाइयाँ, त्योहारों के लिए special orders
+    और शानदार gift boxes।
+  </p>
+
+  <div class="buttons">
+    <a class="btn btn-main" href="#products">मिठाइयाँ देखें</a>
+
+    <!-- बाद में YOUR_NUMBER की जगह दुकान का नंबर डालना है -->
+    <a class="btn btn-whatsapp"
+       href="https://wa.me/91YOUR_NUMBER"
+       target="_blank">
+      WhatsApp करें
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-title">
+    <h2>हमारे बारे में</h2>
+    <p>स्वाद, गुणवत्ता और भरोसा</p>
+  </div>
+
+  <div class="about">
+    <p>
+      Shree Mithai Bhandar में आपको रोज़मर्रा की पसंदीदा
+      मिठाइयों से लेकर त्योहार और खास अवसरों के लिए
+      अलग-अलग मिठाइयाँ और gift options मिलते हैं।
+    </p>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+
+  <div class="section-title">
+    <h2>🍬 हमारी मिठाइयाँ</h2>
+    <p>अपनी पसंद की मिठाई खोजें</p>
+  </div>
+
+  <div class="search-box">
+    <input
+      type="text"
+      id="search"
+      placeholder="मिठाई का नाम खोजें..."
+      onkeyup="searchSweets()">
+  </div>
+
+  <div class="products">
+
+    <div class="product"><div class="sweet-icon">🍥</div><h3>रसगुल्ला</h3><p>Soft और रसदार मिठाई</p></div>
+
+    <div class="product"><div class="sweet-icon">🟤</div><h3>गुलाब जामुन</h3><p>गरम या ठंडा, स्वादिष्ट मिठाई</p></div>
+
+    <div class="product"><div class="sweet-icon">🥛</div><h3>रस मलाई</h3><p>दूध और मलाई का शानदार स्वाद</p></div>
+
+    <div class="product"><div class="sweet-icon">🍬</div><h3>काजू कतली</h3><p>काजू से बनी खास मिठाई</p></div>
+
+    <div class="product"><div class="sweet-icon">🟠</div><h3>मोतीचूर लड्डू</h3><p>त्योहारों की पसंदीदा मिठाई</p></div>
+
+    <div class="product"><div class="sweet-icon">🟡</div><h3>बेसन लड्डू</h3><p>घरेलू स्वाद वाला लड्डू</p></div>
+
+    <div class="product"><div class="sweet-icon">🟠</div><h3>बूंदी लड्डू</h3><p>खुशियों के लिए खास</p></div>
+
+    <div class="product"><div class="sweet-icon">🟤</div><h3>पेड़ा</h3><p>दूध से बनी पारंपरिक मिठाई</p></div>
+
+    <div class="product"><div class="sweet-icon">🍰</div><h3>मिल्क केक</h3><p>Rich और creamy स्वाद</p></div>
+
+    <div class="product"><div class="sweet-icon">🍫</div><h3>बर्फी</h3><p>पारंपरिक मिठाई</p></div>
+
+    <div class="product"><div class="sweet-icon">🥥</div><h3>नारियल बर्फी</h3><p>नारियल का स्वाद</p></div>
+
+    <div class="product"><div class="sweet-icon">⬜</div><h3>कलाकंद</h3><p>दूध से बनी स्वादिष्ट मिठाई</p></div>
+
+    <div class="product"><div class="sweet-icon">🍰</div><h3>सोन पापड़ी</h3><p>हल्की और crispy मिठाई</p></div>
+
+    <div class="product"><div class="sweet-icon">🟠</div><h3>जलेबी</h3><p>गरमा-गरम मीठा स्वाद</p></div>
+
+    <div class="product"><div class="sweet-icon">🟠</div><h3>इमरती</h3><p>पारंपरिक स्वादिष्ट मिठाई</p></div>
+
+    <div class="product"><div class="sweet-icon">🟤</div><h3>बालूशाही</h3><p>खस्ता और स्वादिष्ट</p></div>
+
+    <div class="product"><div class="sweet-icon">🥕</div><h3>गाजर का हलवा</h3><p>खास मौसम की पसंद</p></div>
+
+    <div class="product"><div class="sweet-icon">🥞</div><h3>मालपुआ</h3><p>पारंपरिक भारतीय मिठाई</p></div>
+
+    <div class="product"><div class="sweet-icon">⚪</div><h3>चमचम</h3><p>Soft और मीठा स्वाद</p></div>
+
+    <div class="product"><div class="sweet-icon">🍮</div><h3>खीरमोहन</h3><p>खास अवसरों के लिए</p></div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+
+  <div class="section-title">
+    <h2>📸 हमारी Gallery</h2>
+    <p>दुकान और मिठाइयों की तस्वीरें</p>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-box">📷 मिठाइयों की Photo</div>
+    <div class="gallery-box">📷 दुकान की Photo</div>
+    <div class="gallery-box">📷 Gift Box Photo</div>
+    <div class="gallery-box">📷 Festival Special</div>
+    <div class="gallery-box">📷 Fresh Sweets</div>
+    <div class="gallery-box">📷 Customer Orders</div>
+  </div>
+
+  <p style="text-align:center;margin-top:15px;">
+    बाद में यहाँ असली दुकान की तस्वीरें लगाई जा सकती हैं।
+  </p>
+
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+
+  <div class="section-title">
+    <h2>⭐ Customer Reviews</h2>
+    <p>Demo reviews — असली ग्राहक की अनुमति से ही असली review डालें</p>
+  </div>
+
+  <div class="reviews">
+
+    <div class="review">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>“मिठाई का स्वाद बहुत अच्छा लगा।”</p>
+      <small>— Demo Customer</small>
+    </div>
+
+    <div class="review">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>“त्योहार के लिए order अच्छा मिला।”</p>
+      <small>— Demo Customer</small>
+    </div>
+
+    <div class="review">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>“Gift box बहुत अच्छा था।”</p>
+      <small>— Demo Customer</small>
+    </div>
+
+  </div>
+</section>
+
+<!-- SHOP INFORMATION -->
+<section>
+
+  <div class="section-title">
+    <h2>📋 दुकान की जानकारी</h2>
+  </div>
+
+  <div class="info-grid">
+
+    <div class="info-card">
+      <h3>🕐 Opening Hours</h3>
+      <p>सुबह 8:00 बजे – रात 9:00 बजे</p>
+      <p>सोमवार – रविवार</p>
+    </div>
+
+    <div class="info-card">
+      <h3>📦 Orders</h3>
+      <p>Birthday, शादी, त्योहार और special occasions के लिए orders.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🎁 Gift Boxes</h3>
+      <p>खास अवसरों के लिए मिठाई और gift packing.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section>
+
+  <div class="section-title">
+    <h2>📍 Location</h2>
+    <p>दुकान तक आसानी से पहुँचें</p>
+  </div>
+
+  <div class="map">
+
+    <p>
+      यहाँ बाद में असली दुकान का address और Google Maps location लगाया जाएगा।
+    </p>
+
+    <br>
+
+    <!-- बाद में YOUR_BUSINESS_ADDRESS को असली address से बदलना है -->
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=YOUR_BUSINESS_ADDRESS"
+      target="_blank">
+      📍 Google Maps पर Location देखें
+    </a>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+  <div class="contact">
+
+    <div class="section-title">
+      <h2>📞 Contact करें</h2>
+      <p>मिठाई या order के लिए संपर्क करें</p>
+    </div>
+
+    <p>📞 Phone: दुकान का नंबर यहाँ आएगा</p>
+
+    <div class="buttons">
+
+      <!-- बाद में YOUR_NUMBER बदलना है -->
+      <a
+        class="btn btn-main"
+        href="tel:+91YOUR_NUMBER">
+        📞 Call Now
+      </a>
+
+      <a
+        class="btn btn-whatsapp"
+        href="https://wa.me/91YOUR_NUMBER"
+        target="_blank">
+        💬 WhatsApp
+      </a>
+
+    </div>
+
+    <form onsubmit="sendEnquiry(event)">
+
+      <input
+        type="text"
+        id="name"
+        placeholder="आपका नाम"
+        required>
+
+      <input
+        type="tel"
+        id="phone"
+        placeholder="मोबाइल नंबर"
+        required>
+
+      <textarea
+        id="message"
+        placeholder="आप क्या order करना चाहते हैं?"
+        required></textarea>
+
+      <button type="submit">
+        Enquiry भेजें
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Shree Mithai Bhandar</p>
+  <p>Website Demo by Nitish</p>
+</footer>
+
+<script>
+
+  function searchSweets() {
+
+    let input = document
+      .getElementById("search")
+      .value
+      .toLowerCase();
+
+    let products = document.querySelectorAll(".product");
+
+    products.forEach(function(product) {
+
+      let name = product
+        .querySelector("h3")
+        .innerText
+        .toLowerCase();
+
+      if (name.includes(input)) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+
+    });
+  }
+
+  function sendEnquiry(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+
+    alert(
+      "धन्यवाद " +
+      name +
+      "! आपकी enquiry demo के रूप में दर्ज हुई।"
+    );
+
+  }
+
+</script>
+
+</body>
+</html>
