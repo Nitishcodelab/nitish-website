@@ -1012,4 +1012,1042 @@
       transition:.3s;
     }
 
-    
+    padding:28px;
+      background:var(--soft);
+      border-radius:20px;
+      transition:.3s;
+    }
+
+    .service-card:hover{
+      transform:translateY(-5px);
+      box-shadow:var(--shadow);
+    }
+
+    .service-icon{
+      width:55px;
+      height:55px;
+      border-radius:16px;
+      background:var(--black);
+      color:var(--gold2);
+      display:grid;
+      place-items:center;
+      font-size:25px;
+      margin-bottom:20px;
+    }
+
+    .service-card h3{
+      font-size:18px;
+      margin-bottom:8px;
+    }
+
+    .service-card p{
+      color:#777;
+      font-size:13px;
+    }
+
+    /* =========================================================
+       REVIEWS
+       ========================================================= */
+
+    .reviews{
+      background:white;
+    }
+
+    .review-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .review-card{
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:28px;
+    }
+
+    .stars{
+      color:#c9a45c;
+      letter-spacing:3px;
+      margin-bottom:15px;
+    }
+
+    .review-card p{
+      color:#555;
+      font-size:14px;
+      margin-bottom:20px;
+    }
+
+    .review-name{
+      font-weight:900;
+      font-size:13px;
+    }
+
+    .review-note{
+      color:#999;
+      font-size:10px;
+      margin-top:4px;
+    }
+
+    /* =========================================================
+       FAQ
+       ========================================================= */
+
+    .faq{
+      background:var(--soft);
+    }
+
+    .faq-wrap{
+      max-width:900px;
+      margin:auto;
+    }
+
+    .faq-item{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:16px;
+      margin-bottom:12px;
+      overflow:hidden;
+    }
+
+    .faq-question{
+      width:100%;
+      border:0;
+      background:white;
+      padding:20px 22px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      text-align:left;
+      font-weight:800;
+      font-size:14px;
+    }
+
+    .faq-question span{
+      font-size:22px;
+      transition:.3s;
+    }
+
+    .faq-answer{
+      max-height:0;
+      overflow:hidden;
+      transition:.35s ease;
+    }
+
+    .faq-answer p{
+      padding:0 22px 20px;
+      color:#777;
+      font-size:13px;
+    }
+
+    .faq-item.open .faq-answer{
+      max-height:200px;
+    }
+
+    .faq-item.open .faq-question span{
+      transform:rotate(45deg);
+    }
+
+    /* =========================================================
+       LOCATION + CONTACT
+       ========================================================= */
+
+    .contact{
+      background:white;
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:30px;
+    }
+
+    .contact-card{
+      background:var(--black);
+      color:white;
+      border-radius:28px;
+      padding:40px;
+      min-height:100%;
+    }
+
+    .contact-card .section-kicker{
+      color:var(--gold2);
+    }
+
+    .contact-card h3{
+      font-size:38px;
+      line-height:1.05;
+      margin-bottom:18px;
+    }
+
+    .contact-card > p{
+      color:#aaa;
+      font-size:14px;
+      margin-bottom:30px;
+    }
+
+    .contact-list{
+      display:grid;
+      gap:18px;
+    }
+
+    .contact-row{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+    }
+
+    .contact-row-icon{
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      background:#242424;
+      display:grid;
+      place-items:center;
+      flex:none;
+    }
+
+    .contact-row small{
+      display:block;
+      color:#888;
+      font-size:10px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      margin-bottom:3px;
+    }
+
+    .contact-row strong{
+      font-size:14px;
+    }
+
+    .contact-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+
+    .form-card{
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:40px;
+    }
+
+    .form-card h3{
+      font-size:30px;
+      margin-bottom:8px;
+    }
+
+    .form-card > p{
+      color:#777;
+      font-size:13px;
+      margin-bottom:25px;
+    }
+
+    .form-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+
+    .field{
+      display:flex;
+      flex-direction:column;
+      gap:7px;
+    }
+
+    .field.full{
+      grid-column:1/-1;
+    }
+
+    .field label{
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+
+    .field input,
+    .field textarea,
+    .field select{
+      width:100%;
+      border:1px solid #ddd;
+      background:#fafafa;
+      padding:13px 15px;
+      border-radius:12px;
+      outline:none;
+    }
+
+    .field input:focus,
+    .field textarea:focus,
+    .field select:focus{
+      border-color:var(--gold);
+      background:white;
+    }
+
+    .field textarea{
+      min-height:130px;
+      resize:vertical;
+    }
+
+    .submit-btn{
+      margin-top:18px;
+      width:100%;
+      border:0;
+      background:var(--black);
+      color:white;
+      padding:15px;
+      border-radius:999px;
+      font-weight:900;
+    }
+
+    .submit-btn:hover{
+      background:#222;
+    }
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    footer{
+      background:#070707;
+      color:white;
+      padding:70px 0 25px;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.4fr 1fr 1fr 1fr;
+      gap:35px;
+      padding-bottom:45px;
+    }
+
+    .footer-brand{
+      font-size:30px;
+      font-weight:900;
+      letter-spacing:3px;
+      margin-bottom:12px;
+    }
+
+    .footer-col p{
+      color:#888;
+      font-size:13px;
+      max-width:330px;
+    }
+
+    .footer-col h4{
+      color:var(--gold2);
+      font-size:12px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      margin-bottom:17px;
+    }
+
+    .footer-links{
+      display:grid;
+      gap:10px;
+    }
+
+    .footer-links a{
+      color:#aaa;
+      font-size:13px;
+      transition:.2s;
+    }
+
+    .footer-links a:hover{
+      color:white;
+      padding-left:4px;
+    }
+
+    .footer-bottom{
+      border-top:1px solid #222;
+      padding-top:22px;
+      display:flex;
+      justify-content:space-between;
+      gap:15px;
+      color:#666;
+      font-size:11px;
+      flex-wrap:wrap;
+    }
+
+    /* =========================================================
+       FLOATING WHATSAPP
+       ========================================================= */
+
+    .whatsapp-float{
+      position:fixed;
+      right:20px;
+      bottom:22px;
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      background:var(--success);
+      color:white;
+      display:grid;
+      place-items:center;
+      font-size:27px;
+      z-index:7000;
+      box-shadow:0 12px 35px rgba(0,0,0,.2);
+      transition:.3s;
+    }
+
+    .whatsapp-float:hover{
+      transform:scale(1.08);
+    }
+
+    /* =========================================================
+       BACK TO TOP
+       ========================================================= */
+
+    .back-top{
+      position:fixed;
+      right:22px;
+      bottom:92px;
+      width:42px;
+      height:42px;
+      border-radius:50%;
+      border:1px solid #ddd;
+      background:white;
+      display:grid;
+      place-items:center;
+      opacity:0;
+      visibility:hidden;
+      transition:.3s;
+      z-index:6000;
+    }
+
+    .back-top.show{
+      opacity:1;
+      visibility:visible;
+    }
+
+    /* =========================================================
+       MOBILE NAV
+       ========================================================= */
+
+    .mobile-nav{
+      display:none;
+    }
+
+    /* =========================================================
+       MODAL
+       ========================================================= */
+
+    .modal{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.7);
+      z-index:99990;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:20px;
+    }
+
+    .modal.show{
+      display:flex;
+    }
+
+    .modal-box{
+      width:min(700px,100%);
+      max-height:90vh;
+      overflow:auto;
+      background:white;
+      border-radius:25px;
+      padding:30px;
+      position:relative;
+    }
+
+    .modal-close{
+      position:absolute;
+      right:18px;
+      top:18px;
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      border:1px solid #ddd;
+      background:white;
+      font-size:20px;
+    }
+
+    .modal-visual{
+      height:250px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(145deg,#eee8dd,#aaa092);
+      margin-bottom:22px;
+    }
+
+    .modal-symbol{
+      font-size:110px;
+    }
+
+    .modal-box h2{
+      font-size:30px;
+      margin-bottom:5px;
+    }
+
+    .modal-category{
+      color:#9c7b43;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      font-size:10px;
+      font-weight:900;
+    }
+
+    .modal-box p{
+      color:#777;
+      margin:12px 0 20px;
+      font-size:14px;
+    }
+
+    /* =========================================================
+       REVEAL ANIMATION
+       ========================================================= */
+
+    .reveal{
+      opacity:0;
+      transform:translateY(25px);
+      transition:.8s ease;
+    }
+
+    .reveal.visible{
+      opacity:1;
+      transform:none;
+    }
+
+    /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+    @media(max-width:1100px){
+
+      .products-grid{
+        grid-template-columns:repeat(3,1fr);
+      }
+
+      .collection-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .feature-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .feature-panel:first-child{
+        grid-column:1/-1;
+      }
+
+      .service-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .footer-grid{
+        grid-template-columns:1.5fr 1fr 1fr;
+      }
+    }
+
+    @media(max-width:850px){
+
+      .nav-links{
+        position:absolute;
+        left:0;
+        right:0;
+        top:78px;
+        background:white;
+        padding:15px 5%;
+        display:none;
+        flex-direction:column;
+        align-items:flex-start;
+        border-bottom:1px solid #ddd;
+        box-shadow:0 15px 30px rgba(0,0,0,.08);
+      }
+
+      .nav-links.open{
+        display:flex;
+      }
+
+      .menu-btn{
+        display:grid;
+      }
+
+      .nav-actions .desktop-only{
+        display:none;
+      }
+
+      .hero{
+        min-height:650px;
+      }
+
+      .hero-badge{
+        width:130px;
+        height:130px;
+        right:5%;
+        bottom:8%;
+      }
+
+      .hero-badge strong{
+        font-size:18px;
+      }
+
+      .features{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .feature:nth-child(2){
+        border-right:0;
+      }
+
+      .feature:nth-child(-n+2){
+        border-bottom:1px solid #eee;
+      }
+
+      .showroom-grid,
+      .contact-grid{
+        grid-template-columns:1fr;
+      }
+
+      .stats-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .stat:nth-child(2){
+        border-right:0;
+      }
+
+      .stat:nth-child(-n+2){
+        border-bottom:1px solid #333;
+      }
+
+      .review-grid,
+      .why-grid{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media(max-width:650px){
+
+      section{
+        padding:75px 0;
+      }
+
+      .topbar{
+        display:none;
+      }
+
+      .nav{
+        min-height:68px;
+      }
+
+      .nav-links{
+        top:68px;
+      }
+
+      .brand-name{
+        font-size:19px;
+      }
+
+      .brand-mark{
+        width:40px;
+        height:40px;
+      }
+
+      .hero{
+        min-height:620px;
+      }
+
+      .hero-content{
+        padding:70px 0;
+      }
+
+      .hero h1{
+        font-size:54px;
+        letter-spacing:-3px;
+      }
+
+      .hero p{
+        font-size:15px;
+      }
+
+      .hero-badge{
+        display:none;
+      }
+
+      .feature-strip{
+        margin-top:-25px;
+      }
+
+      .features{
+        grid-template-columns:1fr;
+      }
+
+      .feature{
+        border-right:0 !important;
+        border-bottom:1px solid #eee;
+      }
+
+      .feature:last-child{
+        border-bottom:0;
+      }
+
+      .section-head{
+        display:block;
+      }
+
+      .section-description{
+        margin-top:15px;
+      }
+
+      .collection-grid,
+      .products-grid,
+      .why-grid,
+      .review-grid,
+      .service-grid{
+        grid-template-columns:1fr;
+      }
+
+      .products-grid{
+        gap:15px;
+      }
+
+      .product-visual{
+        height:260px;
+      }
+
+      .feature-grid{
+        grid-template-columns:1fr;
+      }
+
+      .feature-panel:first-child{
+        grid-column:auto;
+      }
+
+      .showroom-main{
+        min-height:400px;
+      }
+
+      .showroom-main h3{
+        font-size:34px;
+      }
+
+      .stats-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .stat{
+        border-right:0 !important;
+      }
+
+      .form-grid{
+        grid-template-columns:1fr;
+      }
+
+      .field.full{
+        grid-column:auto;
+      }
+
+      .contact-card,
+      .form-card{
+        padding:27px;
+      }
+
+      .footer-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .footer-grid > :first-child{
+        grid-column:1/-1;
+      }
+
+      .mobile-nav{
+        position:fixed;
+        left:10px;
+        right:10px;
+        bottom:10px;
+        z-index:8000;
+        background:rgba(15,15,15,.96);
+        border:1px solid #333;
+        border-radius:20px;
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        padding:8px;
+        box-shadow:0 15px 40px rgba(0,0,0,.25);
+      }
+
+      .mobile-nav a{
+        color:#aaa;
+        text-align:center;
+        font-size:10px;
+        padding:7px 2px;
+      }
+
+      .mobile-nav a span{
+        display:block;
+        font-size:18px;
+        margin-bottom:2px;
+      }
+
+      .mobile-nav a:hover{
+        color:white;
+      }
+
+      .whatsapp-float{
+        bottom:80px;
+        right:15px;
+      }
+
+      .back-top{
+        bottom:145px;
+        right:18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       PRELOADER
+       ========================================================= -->
+
+  <div id="loader">
+    <div class="loader-box">
+      <div class="loader-logo">CITY KART</div>
+      <div class="loader-sub">BARHARWA • BIHAR</div>
+      <div class="loader-line">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       TOP BAR
+       ========================================================= -->
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+      <div class="topbar-left">
+        <span>📍 Barharwa, Bihar</span>
+        <span>✦ Fashion • Ethnic • Wedding • Kids</span>
+      </div>
+
+      <div class="topbar-right">
+        <span>Call / WhatsApp:</span>
+        <a class="gold" id="topPhone" href="tel:+918757342062">
+          +91 87573 42062
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header>
+
+    <div class="container nav">
+
+      <a href="#home" class="brand">
+
+        <div class="brand-mark">
+          CK
+        </div>
+
+        <div>
+          <div class="brand-name">
+            CITY KART
+          </div>
+
+          <span class="brand-place">
+            BARHARWA • BIHAR
+          </span>
+        </div>
+
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#showroom">Showroom</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+
+        <a class="icon-btn desktop-only"
+           id="navWhatsApp"
+           href="https://wa.me/918757342062"
+           target="_blank"
+           aria-label="WhatsApp">
+          💬
+        </a>
+
+        <button class="icon-btn menu-btn"
+                id="menuBtn"
+                aria-label="Open Menu">
+          ☰
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="container">
+
+        <div class="hero-content reveal">
+
+          <div class="eyebrow">
+            THE NEW FASHION DESTINATION
+          </div>
+
+          <h1>
+            CITY<br>
+            <span>KART</span>
+          </h1>
+
+          <p>
+            Fashion, ethnic wear, festive styles, wedding collections
+            and everyday looks — all brought together in one premium
+            shopping destination in Barharwa.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#catalogue"
+               class="btn btn-gold">
+              Explore Collection →
+            </a>
+
+            <a href="#contact"
+               class="btn btn-outline">
+              Enquire Now
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-badge">
+        <div>
+          <strong>CK</strong>
+          CURATED<br>
+          STYLE<br>
+          BARHARWA
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         QUICK FEATURES
+         ======================================================= -->
+
+    <div class="container">
+
+      <div class="feature-strip reveal">
+
+        <div class="features">
+
+          <div class="feature">
+            <div class="feature-icon">👔</div>
+            <div>
+              <h3>Men's Fashion</h3>
+              <p>Smart, traditional & everyday styles.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">👗</div>
+            <div>
+              <h3>Women's Fashion</h3>
+              <p>Elegant looks for every occasion.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">🧒</div>
+            <div>
+              <h3>Kids Collection</h3>
+              <p>Comfortable and stylish choices.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">💍</div>
+            <div>
+              <h3>Wedding & Festive</h3>
+              <p>Special styles for special moments.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- =======================================================
+         COLLECTIONS
+         ======================================================= -->
+
+    <section class="collections" id="collections">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div>
+            <div class="section-kicker">
+              Explore
+            </div>
+
+            <h2 class="section-title">
+              Shop by<br>Collection
+            </h2>
+          </div>
+
+          <p class="section-description">
+            Discover different fashion categories designed for
+            everyday wear, celebrations, family shopping and
+            special occasions.
+          </p>
+
+        </div>
+
+        <div class="collection-grid">
+
+          <article class="collection-card reveal">
+            <span class="collection-number">01</span>
+
+            <div class="collection-content">
+              <small>For Him</small>
+              <h3>Men</h3>
+              <span class="collection-link">
+                Shirts • Trousers • Ethnic • Casual
+              </span>
+            </div>
+          </article>
+
+          <article class="collection-card reveal">
+            <span class="collection-number">02</span>
+
+            <div class="collection-content">
+              <small>For Her</small>
+              <h3>Wom
