@@ -2068,3 +2068,329 @@ footer{
       </div>
 
     </section>
+
+  <!-- =========================
+         CATALOGUE
+    ========================== -->
+
+    <section class="section catalogue-section" id="catalogue">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div>
+            <div class="eyebrow">
+              <span></span>
+              CITY KART CATALOGUE
+            </div>
+
+            <h2>
+              Explore the
+              <em>collection.</em>
+            </h2>
+          </div>
+
+          <p>
+            Browse our style categories, search for a product and
+            send an enquiry directly on WhatsApp.
+          </p>
+
+        </div>
+
+        <!-- CATALOGUE TOOLBAR -->
+
+        <div class="filter-bar reveal">
+
+          <div class="category-filters" id="categoryFilters">
+
+            <button
+              class="filter-btn active"
+              type="button"
+              data-category="all"
+            >
+              All
+            </button>
+
+            <button
+              class="filter-btn"
+              type="button"
+              data-category="men"
+            >
+              Men
+            </button>
+
+            <button
+              class="filter-btn"
+              type="button"
+              data-category="women"
+            >
+              Women
+            </button>
+
+            <button
+              class="filter-btn"
+              type="button"
+              data-category="kids"
+            >
+              Kids
+            </button>
+
+            <button
+              class="filter-btn"
+              type="button"
+              data-category="ethnic"
+            >
+              Ethnic
+            </button>
+
+            <button
+              class="filter-btn"
+              type="button"
+              data-category="accessories"
+            >
+              Accessories
+            </button>
+
+          </div>
+
+          <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+              type="search"
+              id="productSearch"
+              placeholder="Search collection..."
+              autocomplete="off"
+            >
+
+          </div>
+
+        </div>
+
+        <!-- PRODUCT GRID -->
+
+        <div class="product-grid" id="productGrid">
+
+          <!-- Products will be rendered by JavaScript -->
+
+        </div>
+
+        <div class="catalogue-note reveal">
+
+          <div class="catalogue-note-icon">✦</div>
+
+          <div>
+            <strong>Looking for something specific?</strong>
+            <p>
+              Tell us what you are looking for and our team can
+              help you with the available collection.
+            </p>
+          </div>
+
+          <a
+            href="https://wa.me/918757342062?text=Hello%20CITY%20KART%2C%20mujhe%20ek%20specific%20product%20ke%20baare%20mein%20poochna%20hai."
+            class="btn btn-dark"
+            target="_blank"
+          >
+            Ask on WhatsApp →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CITY KART EDIT
+    ========================== -->
+
+    <section class="dark-section" id="about">
+
+      <div class="container">
+
+        <div class="dark-grid">
+
+          <div class="dark-copy reveal">
+
+            <div class="eyebrow light">
+              <span></span>
+              THE CITY KART EDIT
+            </div>
+
+            <h2>
+              More than
+              <em>just clothes.</em>
+            </h2>
+
+            <p>
+              CITY KART is designed as a place where fashion,
+              comfort and everyday lifestyle come together.
+              Whether you are looking for something simple,
+              something modern or something special for an occasion,
+              explore a collection made for different moments.
+            </p>
+
+            <div class="dark-points">
+
+              <div class="dark-point">
+                <span>01</span>
+                <div>
+                  <strong>Everyday Style</strong>
+                  <p>
+                    Easy-to-wear styles for your regular wardrobe.
+                  </p>
+                </div>
+              </div>
+
+              <div class="dark-point">
+                <span>02</span>
+                <div>
+                  <strong>Occasion Ready</strong>
+                  <p>
+                    Discover looks for festivals, celebrations and
+                    special occasions.
+                  </p>
+                </div>
+              </div>
+
+              <div class="dark-point">
+                <span>03</span>
+                <div>
+                  <strong>Family Selection</strong>
+                  <p>
+                    A variety of categories for different members
+                    of the family.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="dark-visual reveal">
+
+            <div class="dark-photo-placeholder">
+
+              <div class="placeholder-number">CK</div>
+
+              <div class="placeholder-text">
+                <span>CITY KART</span>
+                <strong>REAL SHOWROOM PHOTO</strong>
+                <small>
+                  This area will be replaced with your actual
+                  showroom photograph.
+                </small>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY CITY KART
+    ========================== -->
+
+    <section class="section" id="why">
+
+      <div class="container">
+
+        <div class="section-heading centered reveal">
+
+          <div>
+            <div class="eyebrow">
+              <span></span>
+              WHY CITY KART
+            </div>
+
+            <h2>
+              Designed around
+              <em>your style.</em>
+            </h2>
+          </div>
+
+          <p>
+            A simple shopping experience with a focus on collection,
+            convenience and personal connection.
+          </p>
+
+        </div>
+
+        <div class="why-grid">
+
+          <div class="why-card reveal">
+
+            <div class="why-number">01</div>
+
+            <div class="why-icon">✦</div>
+
+            <h3>Curated Collection</h3>
+
+            <p>
+              Explore a thoughtfully presented selection of fashion
+              styles across different categories.
+            </p>
+
+          </div>
+
+          <div class="why-card reveal">
+
+            <div class="why-number">02</div>
+
+            <div class="why-icon">⌕</div>
+
+            <h3>Easy Discovery</h3>
+
+            <p>
+              Search and browse the online catalogue before visiting
+              the showroom.
+            </p>
+
+          </div>
+
+          <div class="why-card reveal">
+
+            <div class="why-number">03</div>
+
+            <div class="why-icon">💬</div>
+
+            <h3>Quick Enquiry</h3>
+
+            <p>
+              Have a question about a product or category?
+              Connect directly through WhatsApp.
+            </p>
+
+          </div>
+
+          <div class="why-card reveal">
+
+            <div class="why-number">04</div>
+
+            <div class="why-icon">⌂</div>
+
+            <h3>Local Presence</h3>
+
+            <p>
+              Visit CITY KART in Barharwa, Bihar and experience
+              the collection in person.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
