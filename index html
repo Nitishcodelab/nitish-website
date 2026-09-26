@@ -3181,3 +3181,380 @@ footer{
       </div>
 
     </section>
+
+ <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+      <div class="container">
+
+        <div class="footer-main">
+
+
+          <!-- BRAND -->
+
+          <div class="footer-brand">
+
+            <a href="#home" class="footer-logo">
+              CITY <span>KART</span>
+            </a>
+
+            <p>
+              A modern fashion destination in Barharwa, Bihar.
+              Discover collections, explore styles and connect
+              with CITY KART.
+            </p>
+
+            <a
+              href="https://wa.me/918757342062"
+              class="footer-whatsapp"
+              target="_blank"
+            >
+              WhatsApp Us →
+            </a>
+
+          </div>
+
+
+          <!-- QUICK LINKS -->
+
+          <div class="footer-column">
+
+            <h4>
+              QUICK LINKS
+            </h4>
+
+            <a href="#home">
+              Home
+            </a>
+
+            <a href="#collections">
+              Collections
+            </a>
+
+            <a href="#catalogue">
+              Catalogue
+            </a>
+
+            <a href="#showroom">
+              Showroom
+            </a>
+
+            <a href="#services">
+              Services
+            </a>
+
+            <a href="#contact">
+              Contact
+            </a>
+
+          </div>
+
+
+          <!-- COLLECTIONS -->
+
+          <div class="footer-column">
+
+            <h4>
+              COLLECTIONS
+            </h4>
+
+            <a href="#catalogue">
+              Men's Collection
+            </a>
+
+            <a href="#catalogue">
+              Women's Collection
+            </a>
+
+            <a href="#catalogue">
+              Kids Collection
+            </a>
+
+            <a href="#catalogue">
+              Ethnic Collection
+            </a>
+
+            <a href="#catalogue">
+              Accessories
+            </a>
+
+          </div>
+
+
+          <!-- CONTACT -->
+
+          <div class="footer-column">
+
+            <h4>
+              CONTACT
+            </h4>
+
+            <span>
+              Barharwa, Bihar
+            </span>
+
+            <a href="tel:+918757342062">
+              +91 87573 42062
+            </a>
+
+            <a
+              href="https://wa.me/918757342062"
+              target="_blank"
+            >
+              WhatsApp
+            </a>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=CITY%20KART%20Barharwa%20Bihar"
+              target="_blank"
+            >
+              View Location →
+            </a>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+          <p>
+            © <span id="currentYear"></span>
+            CITY KART. All rights reserved.
+          </p>
+
+          <div class="footer-bottom-links">
+
+            <a href="#faq">
+              FAQ
+            </a>
+
+            <a href="#contact">
+              Enquiry
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+
+    <!-- =========================
+         FLOATING WHATSAPP
+    ========================== -->
+
+    <a
+      href="https://wa.me/918757342062"
+      class="floating-whatsapp"
+      id="floatWhatsApp"
+      target="_blank"
+      aria-label="Chat with CITY KART on WhatsApp"
+    >
+
+      <span class="floating-whatsapp-icon">
+        💬
+      </span>
+
+      <span class="floating-whatsapp-text">
+        WhatsApp
+      </span>
+
+    </a>
+
+
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
+
+    <button
+      class="back-to-top"
+      id="backToTop"
+      type="button"
+      aria-label="Back to top"
+    >
+      ↑
+    </button>
+
+
+    <!-- =========================
+         MOBILE MENU
+    ========================== -->
+
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+      aria-hidden="true"
+    >
+
+      <div class="mobile-menu-inner">
+
+
+        <div class="mobile-menu-top">
+
+          <a
+            href="#home"
+            class="mobile-logo"
+          >
+            CITY <span>KART</span>
+          </a>
+
+          <button
+            class="mobile-menu-close"
+            id="mobileMenuClose"
+            type="button"
+            aria-label="Close menu"
+          >
+            ×
+          </button>
+
+        </div>
+
+
+        <nav class="mobile-nav">
+
+          <a href="#home">
+            Home
+          </a>
+
+          <a href="#collections">
+            Collections
+          </a>
+
+          <a href="#catalogue">
+            Catalogue
+          </a>
+
+          <a href="#showroom">
+            Showroom
+          </a>
+
+          <a href="#services">
+            Services
+          </a>
+
+          <a href="#reviews">
+            Reviews
+          </a>
+
+          <a href="#faq">
+            FAQ
+          </a>
+
+          <a href="#contact">
+            Contact
+          </a>
+
+        </nav>
+
+
+        <a
+          href="https://wa.me/918757342062"
+          class="btn btn-dark mobile-whatsapp"
+          target="_blank"
+        >
+          Chat on WhatsApp →
+        </a>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         PRODUCT MODAL
+    ========================== -->
+
+    <div
+      class="product-modal"
+      id="productModal"
+      aria-hidden="true"
+    >
+
+      <div class="product-modal-overlay"></div>
+
+
+      <div
+        class="product-modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalProductName"
+      >
+
+
+        <button
+          class="product-modal-close"
+          id="productModalClose"
+          type="button"
+          aria-label="Close product"
+        >
+          ×
+        </button>
+
+
+        <div class="product-modal-image">
+
+          <div
+            class="product-modal-image-placeholder"
+            id="modalProductImage"
+          >
+            CITY KART
+          </div>
+
+        </div>
+
+
+        <div class="product-modal-content">
+
+          <span
+            class="product-modal-category"
+            id="modalProductCategory"
+          >
+            COLLECTION
+          </span>
+
+          <h3 id="modalProductName">
+            Product Name
+          </h3>
+
+          <p id="modalProductDescription">
+            Product description will appear here.
+          </p>
+
+
+          <div class="product-modal-actions">
+
+            <button
+              class="btn btn-dark"
+              id="modalEnquiryBtn"
+              type="button"
+            >
+              Enquire on WhatsApp →
+            </button>
+
+            <button
+              class="btn btn-light"
+              id="modalCloseBtn"
+              type="button"
+            >
+              Continue Browsing
+            </button>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </main>
