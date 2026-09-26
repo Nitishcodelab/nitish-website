@@ -4015,3 +4015,122 @@ I found CITY KART through the website.`;
 
         if (
           !("IntersectionObserver" in window
+) {
+
+          revealElements.forEach(
+            function (element) {
+
+              element.classList.add(
+                "visible"
+              );
+
+            }
+          );
+
+          return;
+
+        }
+
+
+        const observer =
+          new IntersectionObserver(
+            function (entries) {
+
+              entries.forEach(
+                function (entry) {
+
+                  if (
+                    entry.isIntersecting
+                  ) {
+
+                    entry.target.classList.add(
+                      "visible"
+                    );
+
+                    observer.unobserve(
+                      entry.target
+                    );
+
+                  }
+
+                }
+              );
+
+            },
+            {
+
+              threshold: 0.12
+
+            }
+          );
+
+
+        revealElements.forEach(
+          function (element) {
+
+            observer.observe(element);
+
+          }
+        );
+
+      }
+
+
+      observeRevealElements();
+
+
+      /* =========================
+         FLOATING WHATSAPP
+      ========================== */
+
+      const floatWhatsApp =
+        document.getElementById(
+          "floatWhatsApp"
+        );
+
+
+      if (floatWhatsApp) {
+
+        floatWhatsApp.addEventListener(
+          "click",
+          function () {
+
+            const url =
+              `https://wa.me/${CITY_KART.whatsapp}`;
+
+            this.href = url;
+
+          }
+        );
+
+      }
+
+
+      /* =========================
+         ESC KEY
+      ========================== */
+
+      document.addEventListener(
+        "keydown",
+        function (event) {
+
+          if (
+            event.key === "Escape"
+          ) {
+
+            closeMobileMenu();
+
+          }
+
+        }
+      );
+
+
+    });
+
+  </script>
+
+
+</body>
+
+</html>
