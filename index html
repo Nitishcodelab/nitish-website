@@ -1735,3 +1735,336 @@ footer{
   }
 
 }
+</style>
+</head>
+
+<body>
+
+  <!-- =========================
+       PAGE LOADER
+  ========================== -->
+
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <div class="loader-logo">CITY KART</div>
+      <div class="loader-line"></div>
+      <p>Barharwa • Bihar</p>
+    </div>
+  </div>
+
+  <!-- =========================
+       TOP BAR
+  ========================== -->
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+      <div class="topbar-left">
+        <span>📍 Barharwa, Bihar</span>
+        <span>•</span>
+        <span>Premium Fashion & Lifestyle</span>
+      </div>
+
+      <div class="topbar-right">
+        <a href="tel:+918757342062">☎ +91 87573 42062</a>
+        <span>•</span>
+        <a href="https://wa.me/918757342062" target="_blank">WhatsApp</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="header" id="header">
+
+    <div class="container nav">
+
+      <a href="#home" class="brand">
+        <span class="brand-mark">CK</span>
+        <span>
+          <strong>CITY KART</strong>
+          <small>BARHARWA</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#about">About</a>
+        <a href="#showroom">Showroom</a>
+        <a href="#services">Services</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+
+      </nav>
+
+      <a
+        href="https://wa.me/918757342062?text=Hello%20CITY%20KART%2C%20mujhe%20collection%20ke%20baare%20mein%20jaankari%20chahiye."
+        class="btn btn-dark nav-cta"
+        target="_blank"
+      >
+        WhatsApp
+      </a>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">
+        ☰
+      </button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero" id="home">
+
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+
+          <div class="eyebrow">
+            <span></span>
+            CITY KART • BARHARWA
+          </div>
+
+          <h1>
+            Style that feels
+            <em>different.</em>
+          </h1>
+
+          <p>
+            Discover a thoughtfully selected fashion and lifestyle
+            collection at CITY KART, Barharwa. Explore everyday styles,
+            occasion-ready looks and fresh arrivals under one roof.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#catalogue" class="btn btn-dark">
+              Explore Collection →
+            </a>
+
+            <a
+              href="https://wa.me/918757342062?text=Hello%20CITY%20KART%2C%20mujhe%20aapki%20collection%20dekhni%20hai."
+              class="btn btn-outline"
+              target="_blank"
+            >
+              💬 Enquire on WhatsApp
+            </a>
+
+          </div>
+
+          <div class="hero-trust">
+
+            <div class="trust-item">
+              <strong>Fresh</strong>
+              <span>Collections</span>
+            </div>
+
+            <div class="trust-item">
+              <strong>Family</strong>
+              <span>Fashion</span>
+            </div>
+
+            <div class="trust-item">
+              <strong>Barharwa</strong>
+              <span>Local Store</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hero-visual reveal">
+
+          <div class="hero-card-main">
+
+            <div class="hero-image-placeholder">
+              <span>YOUR SHOWROOM PHOTO</span>
+              <small>Real City Kart photo will be added here</small>
+            </div>
+
+            <div class="hero-card-caption">
+              <div>
+                <span>THE CITY KART EDIT</span>
+                <strong>Made for your everyday style.</strong>
+              </div>
+
+              <span class="arrow-circle">↗</span>
+            </div>
+
+          </div>
+
+          <div class="hero-card-small hero-card-small-one">
+            <span>01</span>
+            <strong>NEW<br>ARRIVALS</strong>
+          </div>
+
+          <div class="hero-card-small hero-card-small-two">
+            <span>02</span>
+            <strong>STYLE<br>ESSENTIALS</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         FEATURE STRIP
+    ========================== -->
+
+    <section class="feature-section">
+
+      <div class="container feature-strip">
+
+        <div class="feature-box">
+
+          <div class="feature-icon">✦</div>
+
+          <div>
+            <strong>Fresh Collections</strong>
+            <span>New styles added regularly</span>
+          </div>
+
+        </div>
+
+        <div class="feature-box">
+
+          <div class="feature-icon">◈</div>
+
+          <div>
+            <strong>Family Fashion</strong>
+            <span>Styles for different occasions</span>
+          </div>
+
+        </div>
+
+        <div class="feature-box">
+
+          <div class="feature-icon">⌂</div>
+
+          <div>
+            <strong>Visit Our Store</strong>
+            <span>Barharwa, Bihar</span>
+          </div>
+
+        </div>
+
+        <div class="feature-box">
+
+          <div class="feature-icon">↗</div>
+
+          <div>
+            <strong>Easy Enquiry</strong>
+            <span>Connect through WhatsApp</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         COLLECTIONS
+    ========================== -->
+
+    <section class="section" id="collections">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div>
+            <div class="eyebrow">
+              <span></span>
+              SHOP BY COLLECTION
+            </div>
+
+            <h2>
+              Find your
+              <em>style.</em>
+            </h2>
+          </div>
+
+          <p>
+            Explore different fashion categories and discover the
+            collection that matches your style and occasion.
+          </p>
+
+        </div>
+
+        <div class="collection-grid">
+
+          <a href="#catalogue" class="collection-card reveal">
+
+            <div class="collection-number">01</div>
+
+            <div class="collection-content">
+              <span>EVERYDAY</span>
+              <h3>Daily Wear</h3>
+              <p>Comfortable and stylish everyday fashion.</p>
+            </div>
+
+            <div class="collection-arrow">↗</div>
+
+          </a>
+
+          <a href="#catalogue" class="collection-card reveal">
+
+            <div class="collection-number">02</div>
+
+            <div class="collection-content">
+              <span>OCCASION</span>
+              <h3>Festive Edit</h3>
+              <p>Special looks for celebrations and occasions.</p>
+            </div>
+
+            <div class="collection-arrow">↗</div>
+
+          </a>
+
+          <a href="#catalogue" class="collection-card reveal">
+
+            <div class="collection-number">03</div>
+
+            <div class="collection-content">
+              <span>MODERN</span>
+              <h3>Casual Styles</h3>
+              <p>Relaxed looks with a modern fashion touch.</p>
+            </div>
+
+            <div class="collection-arrow">↗</div>
+
+          </a>
+
+          <a href="#catalogue" class="collection-card reveal">
+
+            <div class="collection-number">04</div>
+
+            <div class="collection-content">
+              <span>FAMILY</span>
+              <h3>Family Picks</h3>
+              <p>Explore styles for different members of the family.</p>
+            </div>
+
+            <div class="collection-arrow">↗</div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
