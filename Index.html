@@ -2846,3 +2846,782 @@
                     <option>Women's Fashion</option>
                     <option>Kids Collection</option>
                     <option>Wedding Collection</option>
+                    <option>Festive Collection</option>
+                    <option>General Enquiry</option>
+                  </select>
+                </div>
+
+                <div class="field field-full">
+                  <label for="message">Message</label>
+
+                  <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="What would you like to know?"
+                    required></textarea>
+                </div>
+
+              </div>
+
+              <button
+                class="btn btn-dark form-submit"
+                type="submit">
+                Send Enquiry on WhatsApp →
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         FOOTER
+         ======================================================= -->
+
+    <footer class="footer">
+
+      <div class="container">
+
+        <div class="footer-grid">
+
+          <div class="footer-brand">
+
+            <a href="#home" class="logo footer-logo">
+              CITY<span>KART</span>
+            </a>
+
+            <p>
+              A modern fashion destination in
+              Barharwa, Bihar.
+            </p>
+
+            <a
+              href="https://wa.me/918757342062"
+              target="_blank"
+              class="footer-whatsapp">
+              WhatsApp Enquiry →
+            </a>
+
+          </div>
+
+          <div class="footer-column">
+
+            <h4>Explore</h4>
+
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#catalogue">Catalogue</a>
+            <a href="#showroom">Showroom</a>
+
+          </div>
+
+          <div class="footer-column">
+
+            <h4>Categories</h4>
+
+            <a href="#catalogue">Men</a>
+            <a href="#catalogue">Women</a>
+            <a href="#catalogue">Kids</a>
+            <a href="#catalogue">Wedding</a>
+
+          </div>
+
+          <div class="footer-column">
+
+            <h4>Contact</h4>
+
+            <a
+              id="footerPhone"
+              href="tel:+918757342062">
+              +91 87573 42062
+            </a>
+
+            <a
+              href="https://wa.me/918757342062"
+              target="_blank">
+              WhatsApp
+            </a>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=CITY+KART+Barharwa+Bihar"
+              target="_blank">
+              Barharwa, Bihar
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <span>
+            © <span id="year"></span> CITY KART.
+            All Rights Reserved.
+          </span>
+
+          <span>
+            Designed with care.
+          </span>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+
+    <!-- =======================================================
+         FLOATING WHATSAPP
+         ======================================================= -->
+
+    <a
+      class="floating-whatsapp"
+      id="floatWhatsApp"
+      href="https://wa.me/918757342062"
+      target="_blank"
+      aria-label="Chat on WhatsApp">
+
+      <span>💬</span>
+
+    </a>
+
+
+    <!-- =======================================================
+         BACK TO TOP
+         ======================================================= -->
+
+    <button
+      class="back-top"
+      id="backTop"
+      aria-label="Back to top">
+
+      ↑
+
+    </button>
+
+
+    <!-- =======================================================
+         MOBILE NAV OVERLAY
+         ======================================================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+      <div class="mobile-menu-inner">
+
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#showroom">Showroom</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+
+        <a
+          class="btn btn-gold mobile-whatsapp"
+          href="https://wa.me/918757342062"
+          target="_blank">
+          WhatsApp Us
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =======================================================
+         PRODUCT MODAL
+         ======================================================= -->
+
+    <div class="product-modal" id="productModal">
+
+      <div class="modal-overlay" id="modalOverlay"></div>
+
+      <div class="modal-box">
+
+        <button
+          class="modal-close"
+          id="modalClose"
+          aria-label="Close">
+          ×
+        </button>
+
+        <div
+          class="modal-visual"
+          id="modalVisual">
+
+          <span
+            class="modal-symbol"
+            id="modalSymbol">
+            ✦
+          </span>
+
+        </div>
+
+        <div class="modal-content">
+
+          <small id="modalCategory">
+            Category
+          </small>
+
+          <h3 id="modalTitle">
+            Style Name
+          </h3>
+
+          <p id="modalDescription">
+            Style description.
+          </p>
+
+          <a
+            class="btn btn-gold"
+            id="modalWhatsApp"
+            href="#"
+            target="_blank">
+            Enquire on WhatsApp →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =======================================================
+         JAVASCRIPT
+         ======================================================= -->
+
+    <script>
+
+      /* =====================================================
+         CITY KART MAIN CONFIG
+         ===================================================== */
+
+      const CITY_KART = {
+
+        name: "CITY KART",
+
+        location: "Barharwa, Bihar",
+
+        phone: "8757342062",
+
+        whatsapp: "918757342062"
+
+      };
+
+
+      /* =====================================================
+         DOM READY
+         ===================================================== */
+
+      document.addEventListener("DOMContentLoaded", () => {
+
+
+        /* ===================================================
+           YEAR
+           =================================================== */
+
+        const yearElement =
+          document.getElementById("year");
+
+        if (yearElement) {
+
+          yearElement.textContent =
+            new Date().getFullYear();
+
+        }
+
+
+        /* ===================================================
+           LOADER
+           =================================================== */
+
+        const loader =
+          document.getElementById("loader");
+
+        window.addEventListener("load", () => {
+
+          setTimeout(() => {
+
+            if (loader) {
+
+              loader.classList.add("hide");
+
+            }
+
+          }, 500);
+
+        });
+
+
+        /* ===================================================
+           PHONE / WHATSAPP
+           =================================================== */
+
+        const phoneText =
+          "+91 " +
+          CITY_KART.phone.slice(0, 5) +
+          " " +
+          CITY_KART.phone.slice(5);
+
+        const phoneElements = [
+
+          document.getElementById("topPhone"),
+
+          document.getElementById("contactPhone"),
+
+          document.getElementById("footerPhone")
+
+        ];
+
+        phoneElements.forEach(element => {
+
+          if (!element) return;
+
+          element.textContent = phoneText;
+
+        });
+
+
+        const phoneLink =
+          "tel:+91" + CITY_KART.phone;
+
+
+        const whatsappLink =
+          "https://wa.me/" +
+          CITY_KART.whatsapp;
+
+
+        const whatsappElements = [
+
+          document.getElementById("navWhatsApp"),
+
+          document.getElementById("contactWhatsApp"),
+
+          document.getElementById("floatWhatsApp"),
+
+          document.getElementById("floatWhatsApp"),
+
+          document.querySelector(".footer-whatsapp"),
+
+          document.querySelector(".mobile-whatsapp")
+
+        ];
+
+
+        whatsappElements.forEach(element => {
+
+          if (!element) return;
+
+          element.href = whatsappLink;
+
+        });
+
+
+        const footerPhone =
+          document.getElementById("footerPhone");
+
+        if (footerPhone) {
+
+          footerPhone.href = phoneLink;
+
+        }
+
+
+        /* ===================================================
+           PRODUCT DATA
+           =================================================== */
+
+        const products = [
+
+          {
+            id: 1,
+            title: "Classic Shirt",
+            category: "men",
+            label: "Men",
+            tag: "Everyday",
+            symbol: "👔",
+            description:
+              "A clean everyday style idea for a smart casual wardrobe."
+          },
+
+          {
+            id: 2,
+            title: "Premium Kurta",
+            category: "men",
+            label: "Men",
+            tag: "Ethnic",
+            symbol: "🧥",
+            description:
+              "A traditional-inspired look suitable for festive and special occasions."
+          },
+
+          {
+            id: 3,
+            title: "Casual T-Shirt",
+            category: "men",
+            label: "Men",
+            tag: "Casual",
+            symbol: "👕",
+            description:
+              "Simple casual styling for relaxed everyday dressing."
+          },
+
+          {
+            id: 4,
+            title: "Formal Look",
+            category: "men",
+            label: "Men",
+            tag: "Formal",
+            symbol: "🤵",
+            description:
+              "A polished style direction for formal occasions and events."
+          },
+
+          {
+            id: 5,
+            title: "Elegant Saree",
+            category: "women",
+            label: "Women",
+            tag: "Elegant",
+            symbol: "🥻",
+            description:
+              "An elegant ethnic style idea for celebrations and occasions."
+          },
+
+          {
+            id: 6,
+            title: "Festive Suit",
+            category: "women",
+            label: "Women",
+            tag: "Festive",
+            symbol: "👗",
+            description:
+              "A festive outfit concept designed for special moments."
+          },
+
+          {
+            id: 7,
+            title: "Classic Dress",
+            category: "women",
+            label: "Women",
+            tag: "Dress",
+            symbol: "👗",
+            description:
+              "A contemporary dress style for outings and occasions."
+          },
+
+          {
+            id: 8,
+            title: "Ethnic Collection",
+            category: "women",
+            label: "Women",
+            tag: "Ethnic",
+            symbol: "✨",
+            description:
+              "Ethnic-inspired fashion ideas for a graceful look."
+          },
+
+          {
+            id: 9,
+            title: "Kids Casual",
+            category: "kids",
+            label: "Kids",
+            tag: "Casual",
+            symbol: "🧒",
+            description:
+              "Comfortable casual fashion ideas for children."
+          },
+
+          {
+            id: 10,
+            title: "Little Festive",
+            category: "kids",
+            label: "Kids",
+            tag: "Festive",
+            symbol: "🎉",
+            description:
+              "Festive style ideas for little celebrations."
+          },
+
+          {
+            id: 11,
+            title: "Boys Collection",
+            category: "kids",
+            label: "Kids",
+            tag: "Boys",
+            symbol: "👦",
+            description:
+              "Style ideas for boys across casual and festive occasions."
+          },
+
+          {
+            id: 12,
+            title: "Girls Collection",
+            category: "kids",
+            label: "Kids",
+            tag: "Girls",
+            symbol: "👧",
+            description:
+              "Style ideas for girls for everyday and special occasions."
+          },
+
+          {
+            id: 13,
+            title: "Wedding Kurta",
+            category: "wedding",
+            label: "Wedding",
+            tag: "Occasion",
+            symbol: "💍",
+            description:
+              "Wedding-ready ethnic styling for memorable family occasions."
+          },
+
+          {
+            id: 14,
+            title: "Wedding Saree",
+            category: "wedding",
+            label: "Wedding",
+            tag: "Elegant",
+            symbol: "🥻",
+            description:
+              "An occasion-focused saree style concept for celebrations."
+          },
+
+          {
+            id: 15,
+            title: "Family Celebration",
+            category: "wedding",
+            label: "Wedding",
+            tag: "Family",
+            symbol: "👨‍👩‍👧‍👦",
+            description:
+              "Coordinated family styling ideas for special occasions."
+          },
+
+          {
+            id: 16,
+            title: "Special Occasion",
+            category: "wedding",
+            label: "Wedding",
+            tag: "Special",
+            symbol: "✨",
+            description:
+              "A special occasion fashion concept for important moments."
+          },
+
+          {
+            id: 17,
+            title: "Festive Kurta",
+            category: "festive",
+            label: "Festive",
+            tag: "Festival",
+            symbol: "🪔",
+            description:
+              "Festive ethnic styling for celebrations and traditional occasions."
+          },
+
+          {
+            id: 18,
+            title: "Festive Saree",
+            category: "festive",
+            label: "Festive",
+            tag: "Festival",
+            symbol: "🥻",
+            description:
+              "Festive saree styling for traditional celebrations."
+          },
+
+          {
+            id: 19,
+            title: "Celebration Look",
+            category: "festive",
+            label: "Festive",
+            tag: "Celebration",
+            symbol: "🎊",
+            description:
+              "A celebration-ready fashion idea for festive moments."
+          },
+
+          {
+            id: 20,
+            title: "Traditional Style",
+            category: "festive",
+            label: "Festive",
+            tag: "Traditional",
+            symbol: "🪷",
+            description:
+              "A traditional fashion direction inspired by festive occasions."
+          },
+
+          {
+            id: 21,
+            title: "Smart Casual",
+            category: "men",
+            label: "Men",
+            tag: "Casual",
+            symbol: "👕",
+            description:
+              "A versatile smart-casual style idea for everyday wear."
+          },
+
+          {
+            id: 22,
+            title: "Graceful Ethnic",
+            category: "women",
+            label: "Women",
+            tag: "Ethnic",
+            symbol: "🌸",
+            description:
+              "A graceful ethnic style direction for special occasions."
+          },
+
+          {
+            id: 23,
+            title: "Family Festive",
+            category: "festive",
+            label: "Festive",
+            tag: "Family",
+            symbol: "👨‍👩‍👧‍👦",
+            description:
+              "Festive fashion ideas for family celebrations."
+          },
+
+          {
+            id: 24,
+            title: "Celebration Edit",
+            category: "wedding",
+            label: "Wedding",
+            tag: "Edit",
+            symbol: "💫",
+            description:
+              "A curated celebration style concept for memorable days."
+          }
+
+        ];
+
+
+        /* ===================================================
+           PRODUCT GRID
+           =================================================== */
+
+        const productsGrid =
+          document.getElementById("productsGrid");
+
+        const noProducts =
+          document.getElementById("noProducts");
+
+        const searchInput =
+          document.getElementById("searchInput");
+
+        const filterButtons =
+          document.querySelectorAll(".filter-btn");
+
+        let activeFilter = "all";
+
+
+        function renderProducts() {
+
+          if (!productsGrid) return;
+
+          const searchTerm =
+            searchInput
+              ? searchInput.value
+                  .trim()
+                  .toLowerCase()
+              : "";
+
+
+          const filteredProducts =
+            products.filter(product => {
+
+              const categoryMatch =
+                activeFilter === "all" ||
+                product.category === activeFilter;
+
+
+              const searchMatch =
+                product.title
+                  .toLowerCase()
+                  .includes(searchTerm) ||
+
+                product.label
+                  .toLowerCase()
+                  .includes(searchTerm) ||
+
+                product.tag
+                  .toLowerCase()
+                  .includes(searchTerm);
+
+
+              return categoryMatch &&
+                     searchMatch;
+
+            });
+
+
+          productsGrid.innerHTML = "";
+
+
+          filteredProducts.forEach(product => {
+
+            const card =
+              document.createElement("article");
+
+            card.className =
+              "product-card reveal";
+
+            card.innerHTML = `
+
+              <div class="product-visual">
+
+                <span class="product-tag">
+                  ${product.tag}
+                </span>
+
+                <span class="product-symbol">
+                  ${product.symbol}
+                </span>
+
+              </div>
+
+              <div class="product-info">
+
+                <small>
+                  ${product.label}
+                </small>
+
+                <h3>
+                  ${product.title}
+                </h3>
+
+                <button
+                  class="product-view"
+                  data-id="${product.id}">
+                  View Style →
+                </button>
+
+              </div>
+
+            `;
+
+
+            productsGrid.appendChild(card);
+
+          });
+
+
+          if (noProducts) {
+
+            noProducts.style.display =
+              filteredProducts.length
+                ? "none"
+                : "block";
+
+          }
+
+
+          document
