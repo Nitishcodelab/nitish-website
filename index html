@@ -2394,3 +2394,374 @@ footer{
       </div>
 
     </section>
+
+ <!-- =========================
+         SHOWROOM
+    ========================== -->
+
+    <section class="section showroom-section" id="showroom">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div>
+            <div class="eyebrow">
+              <span></span>
+              OUR SHOWROOM
+            </div>
+
+            <h2>
+              Experience CITY KART
+              <em>in person.</em>
+            </h2>
+          </div>
+
+          <p>
+            Visit our showroom in Barharwa and explore the collection
+            personally. Real showroom photographs will be added here.
+          </p>
+
+        </div>
+
+        <div class="showroom-grid">
+
+          <div class="showroom-card showroom-large reveal">
+
+            <div class="showroom-photo-placeholder">
+              <span class="showroom-photo-number">01</span>
+
+              <div>
+                <strong>SHOWROOM FRONT</strong>
+                <small>
+                  Real City Kart photo will be added here
+                </small>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="showroom-card reveal">
+
+            <div class="showroom-photo-placeholder">
+              <span class="showroom-photo-number">02</span>
+
+              <div>
+                <strong>STORE INTERIOR</strong>
+                <small>
+                  Real showroom interior photo
+                </small>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="showroom-card reveal">
+
+            <div class="showroom-photo-placeholder">
+              <span class="showroom-photo-number">03</span>
+
+              <div>
+                <strong>COLLECTION AREA</strong>
+                <small>
+                  Real collection display photo
+                </small>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="showroom-card showroom-wide reveal">
+
+            <div class="showroom-photo-placeholder">
+              <span class="showroom-photo-number">04</span>
+
+              <div>
+                <strong>THE CITY KART EXPERIENCE</strong>
+                <small>
+                  Your actual showroom photograph will be placed here
+                </small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showroom-info reveal">
+
+          <div class="showroom-location">
+
+            <div class="showroom-info-icon">⌂</div>
+
+            <div>
+              <span>VISIT US</span>
+              <strong>CITY KART, Barharwa, Bihar</strong>
+            </div>
+
+          </div>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=CITY%20KART%20Barharwa%20Bihar"
+            class="btn btn-dark"
+            target="_blank"
+          >
+            Open on Google Maps →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         STATS
+    ========================== -->
+
+    <section class="stats-section">
+
+      <div class="container stats-grid">
+
+        <div class="stat-item reveal">
+
+          <strong>01</strong>
+
+          <span>Local Fashion Destination</span>
+
+        </div>
+
+        <div class="stat-item reveal">
+
+          <strong>∞</strong>
+
+          <span>Style Possibilities</span>
+
+        </div>
+
+        <div class="stat-item reveal">
+
+          <strong>24/7</strong>
+
+          <span>Online Catalogue Access</span>
+
+        </div>
+
+        <div class="stat-item reveal">
+
+          <strong>01</strong>
+
+          <span>CITY KART Experience</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section class="section" id="services">
+
+      <div class="container">
+
+        <div class="section-heading centered reveal">
+
+          <div>
+            <div class="eyebrow">
+              <span></span>
+              OUR SERVICES
+            </div>
+
+            <h2>
+              Shopping made
+              <em>simple.</em>
+            </h2>
+          </div>
+
+          <p>
+            From discovering a collection online to connecting with
+            the showroom, CITY KART keeps the experience straightforward.
+          </p>
+
+        </div>
+
+        <div class="service-grid">
+
+          <div class="service-card reveal">
+
+            <div class="service-icon">⌕</div>
+
+            <h3>Collection Discovery</h3>
+
+            <p>
+              Browse different categories and discover styles before
+              visiting the showroom.
+            </p>
+
+          </div>
+
+          <div class="service-card reveal">
+
+            <div class="service-icon">◈</div>
+
+            <h3>Product Enquiry</h3>
+
+            <p>
+              Ask about a particular product or category through
+              direct WhatsApp enquiry.
+            </p>
+
+          </div>
+
+          <div class="service-card reveal">
+
+            <div class="service-icon">⌂</div>
+
+            <h3>Showroom Visit</h3>
+
+            <p>
+              Visit CITY KART in Barharwa and explore the collection
+              in person.
+            </p>
+
+          </div>
+
+          <div class="service-card reveal">
+
+            <div class="service-icon">✦</div>
+
+            <h3>Style Assistance</h3>
+
+            <p>
+              Share what you are looking for and connect with the
+              store team for further assistance.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         REVIEWS
+    ========================== -->
+
+    <section class="section reviews" id="reviews">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div>
+            <div class="eyebrow">
+              <span></span>
+              CUSTOMER VOICE
+            </div>
+
+            <h2>
+              What shoppers
+              <em>say.</em>
+            </h2>
+          </div>
+
+          <p>
+            Customer review cards are prepared here and can be
+            replaced with verified customer feedback later.
+          </p>
+
+        </div>
+
+        <div class="review-grid">
+
+          <div class="review-card reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Review placeholder — verified customer feedback
+              will be added here.”
+            </p>
+
+            <div class="reviewer">
+
+              <div class="reviewer-avatar">
+                C
+              </div>
+
+              <div>
+                <strong>Customer Review</strong>
+                <span>Barharwa</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="review-card reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Review placeholder — verified customer feedback
+              will be added here.”
+            </p>
+
+            <div class="reviewer">
+
+              <div class="reviewer-avatar">
+                C
+              </div>
+
+              <div>
+                <strong>Customer Review</strong>
+                <span>Barharwa</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="review-card reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Review placeholder — verified customer feedback
+              will be added here.”
+            </p>
+
+            <div class="reviewer">
+
+              <div class="reviewer-avatar">
+                C
+              </div>
+
+              <div>
+                <strong>Customer Review</strong>
+                <span>Barharwa</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
