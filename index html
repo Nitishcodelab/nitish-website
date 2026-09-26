@@ -2765,3 +2765,419 @@ footer{
       </div>
 
     </section>
+
+ <!-- =========================
+         FAQ
+    ========================== -->
+
+    <section class="section" id="faq">
+
+      <div class="container">
+
+        <div class="section-heading centered reveal">
+
+          <div>
+
+            <div class="eyebrow">
+              <span></span>
+              FREQUENTLY ASKED QUESTIONS
+            </div>
+
+            <h2>
+              Questions, answered
+              <em>simply.</em>
+            </h2>
+
+          </div>
+
+          <p>
+            Find quick answers about CITY KART, our showroom,
+            collection and online enquiry.
+          </p>
+
+        </div>
+
+        <div class="faq reveal">
+
+          <div class="faq-item">
+
+            <button class="faq-question" type="button">
+
+              <span>
+                Where is CITY KART located?
+              </span>
+
+              <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                CITY KART is located in Barharwa, Bihar.
+                Use the Google Maps button on this website for directions.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question" type="button">
+
+              <span>
+                Can I ask about a product on WhatsApp?
+              </span>
+
+              <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Yes. You can send a product or category enquiry directly
+                through WhatsApp using the enquiry buttons on the website.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question" type="button">
+
+              <span>
+                Are the photos on the website final?
+              </span>
+
+              <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Some images are currently placeholders. They can be replaced
+                with actual CITY KART showroom and collection photographs.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question" type="button">
+
+              <span>
+                How can I find a particular category?
+              </span>
+
+              <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Open the Catalogue section and use the category filters
+                or search box to find the type of collection you want.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question" type="button">
+
+              <span>
+                Can I visit the showroom directly?
+              </span>
+
+              <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Yes. CITY KART welcomes visitors at the Barharwa showroom.
+                You can use the location link to plan your visit.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="section contact-section" id="contact">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div>
+
+            <div class="eyebrow">
+              <span></span>
+              GET IN TOUCH
+            </div>
+
+            <h2>
+              Let's talk
+              <em>fashion.</em>
+            </h2>
+
+          </div>
+
+          <p>
+            Have a question about the collection? Send us a message
+            and continue the conversation on WhatsApp.
+          </p>
+
+        </div>
+
+
+        <div class="contact-wrap">
+
+
+          <!-- CONTACT INFORMATION -->
+
+          <div class="contact-info reveal">
+
+            <div class="eyebrow light">
+              <span></span>
+              CITY KART
+            </div>
+
+            <h3>
+              Visit. Explore. Connect.
+            </h3>
+
+            <p>
+              Explore CITY KART online and visit our showroom in
+              Barharwa, Bihar for the complete in-person experience.
+            </p>
+
+
+            <div class="contact-list">
+
+
+              <div class="contact-item">
+
+                <div class="contact-item-icon">
+                  ⌂
+                </div>
+
+                <div>
+
+                  <strong>
+                    Location
+                  </strong>
+
+                  <span>
+                    Barharwa, Bihar
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <div class="contact-item">
+
+                <div class="contact-item-icon">
+                  ☎
+                </div>
+
+                <div>
+
+                  <strong>
+                    Call
+                  </strong>
+
+                  <a href="tel:+918757342062">
+                    +91 87573 42062
+                  </a>
+
+                </div>
+
+              </div>
+
+
+              <div class="contact-item">
+
+                <div class="contact-item-icon">
+                  💬
+                </div>
+
+                <div>
+
+                  <strong>
+                    WhatsApp
+                  </strong>
+
+                  <a
+                    href="https://wa.me/918757342062"
+                    target="_blank"
+                  >
+                    Chat with us
+                  </a>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+          <!-- CONTACT FORM -->
+
+          <form
+            class="contact-form reveal"
+            id="contactForm"
+          >
+
+            <div class="form-grid">
+
+
+              <div class="form-group">
+
+                <label for="contactName">
+                  Your Name
+                </label>
+
+                <input
+                  type="text"
+                  id="contactName"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="contactPhone">
+                  Phone Number
+                </label>
+
+                <input
+                  type="tel"
+                  id="contactPhone"
+                  name="phone"
+                  placeholder="Enter phone number"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group full">
+
+                <label for="contactCategory">
+                  What are you looking for?
+                </label>
+
+                <select
+                  id="contactCategory"
+                  name="category"
+                >
+
+                  <option value="">
+                    Select a category
+                  </option>
+
+                  <option value="Men">
+                    Men's Collection
+                  </option>
+
+                  <option value="Women">
+                    Women's Collection
+                  </option>
+
+                  <option value="Kids">
+                    Kids Collection
+                  </option>
+
+                  <option value="Ethnic">
+                    Ethnic Collection
+                  </option>
+
+                  <option value="Accessories">
+                    Accessories
+                  </option>
+
+                  <option value="Other">
+                    Other
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <div class="form-group full">
+
+                <label for="contactMessage">
+                  Message
+                </label>
+
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  placeholder="Tell us what you are looking for..."
+                  required
+                ></textarea>
+
+              </div>
+
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="btn btn-dark"
+            >
+              Send Enquiry on WhatsApp →
+            </button>
+
+
+            <p class="form-note">
+              Your enquiry will open in WhatsApp using the temporary
+              testing contact configured for this website.
+            </p>
+
+          </form>
+
+
+        </div>
+
+      </div>
+
+    </section>
