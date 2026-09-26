@@ -3625,3 +3625,647 @@
 
 
           document
+          .querySelectorAll(".product-view")
+            .forEach(button => {
+
+              button.addEventListener(
+                "click",
+                () => {
+
+                  const id =
+                    Number(button.dataset.id);
+
+                  openProduct(id);
+
+                }
+              );
+
+            });
+
+
+          observeRevealElements();
+
+        }
+
+
+        filterButtons.forEach(button => {
+
+          button.addEventListener(
+            "click",
+            () => {
+
+              filterButtons.forEach(btn => {
+
+                btn.classList.remove("active");
+
+              });
+
+              button.classList.add("active");
+
+              activeFilter =
+                button.dataset.filter;
+
+              renderProducts();
+
+            }
+          );
+
+        });
+
+
+        if (searchInput) {
+
+          searchInput.addEventListener(
+            "input",
+            renderProducts
+          );
+
+        }
+
+
+        /* ===================================================
+           PRODUCT MODAL
+           =================================================== */
+
+        const productModal =
+          document.getElementById("productModal");
+
+        const modalOverlay =
+          document.getElementById("modalOverlay");
+
+        const modalClose =
+          document.getElementById("modalClose");
+
+        const modalSymbol =
+          document.getElementById("modalSymbol");
+
+        const modalTitle =
+          document.getElementById("modalTitle");
+
+        const modalCategory =
+          document.getElementById("modalCategory");
+
+        const modalDescription =
+          document.getElementById("modalDescription");
+
+        const modalWhatsApp =
+          document.getElementById("modalWhatsApp");
+
+
+        function openProduct(id) {
+
+          const product =
+            products.find(
+              item => item.id === id
+            );
+
+          if (!product || !productModal) return;
+
+
+          if (modalSymbol) {
+
+            modalSymbol.textContent =
+              product.symbol;
+
+          }
+
+
+          if (modalTitle) {
+
+            modalTitle.textContent =
+              product.title;
+
+          }
+
+
+          if (modalCategory) {
+
+            modalCategory.textContent =
+              product.label +
+              " • " +
+              product.tag;
+
+          }
+
+
+          if (modalDescription) {
+
+            modalDescription.textContent =
+              product.description;
+
+          }
+
+
+          const message =
+            `Hello CITY KART, I am interested in the "${product.title}" style. Please share more details.`;
+
+
+          if (modalWhatsApp) {
+
+            modalWhatsApp.href =
+              whatsappLink +
+              "?text=" +
+              encodeURIComponent(message);
+
+          }
+
+
+          productModal.classList.add("active");
+
+          document.body.classList.add("modal-open");
+
+        }
+
+
+        function closeProduct() {
+
+          if (!productModal) return;
+
+          productModal.classList.remove("active");
+
+          document.body.classList.remove("modal-open");
+
+        }
+
+
+        if (modalClose) {
+
+          modalClose.addEventListener(
+            "click",
+            closeProduct
+          );
+
+        }
+
+
+        if (modalOverlay) {
+
+          modalOverlay.addEventListener(
+            "click",
+            closeProduct
+          );
+
+        }
+
+
+        document.addEventListener(
+          "keydown",
+          event => {
+
+            if (event.key === "Escape") {
+
+              closeProduct();
+
+            }
+
+          }
+        );
+
+
+        /* ===================================================
+           FAQ ACCORDION
+           =================================================== */
+
+        const faqItems =
+          document.querySelectorAll(".faq-item");
+
+
+        faqItems.forEach(item => {
+
+          const question =
+            item.querySelector(".faq-question");
+
+
+          question.addEventListener(
+            "click",
+            () => {
+
+              const alreadyOpen =
+                item.classList.contains("active");
+
+
+              faqItems.forEach(otherItem => {
+
+                otherItem.classList.remove("active");
+
+              });
+
+
+              if (!alreadyOpen) {
+
+                item.classList.add("active");
+
+              }
+
+            }
+          );
+
+        });
+
+
+        /* ===================================================
+           MOBILE MENU
+           =================================================== */
+
+        const menuBtn =
+          document.getElementById("menuBtn");
+
+        const mobileMenu =
+          document.getElementById("mobileMenu");
+
+
+        if (menuBtn && mobileMenu) {
+
+          menuBtn.addEventListener(
+            "click",
+            () => {
+
+              mobileMenu.classList.toggle("active");
+
+              menuBtn.classList.toggle("active");
+
+            }
+          );
+
+
+          mobileMenu
+            .querySelectorAll("a")
+            .forEach(link => {
+
+              link.addEventListener(
+                "click",
+                () => {
+
+                  mobileMenu.classList.remove(
+                    "active"
+                  );
+
+                  menuBtn.classList.remove(
+                    "active"
+                  );
+
+                }
+              );
+
+            });
+
+        }
+
+
+        /* ===================================================
+           BACK TO TOP
+           =================================================== */
+
+        const backTop =
+          document.getElementById("backTop");
+
+
+        window.addEventListener(
+          "scroll",
+          () => {
+
+            if (!backTop) return;
+
+            if (window.scrollY > 600) {
+
+              backTop.classList.add("show");
+
+            } else {
+
+              backTop.classList.remove("show");
+
+            }
+
+          }
+        );
+
+
+        if (backTop) {
+
+          backTop.addEventListener(
+            "click",
+            () => {
+
+              window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+              });
+
+            }
+          );
+
+        }
+
+
+        /* ===================================================
+           SMOOTH SCROLL
+           =================================================== */
+
+        document
+          .querySelectorAll('a[href^="#"]')
+          .forEach(link => {
+
+            link.addEventListener(
+              "click",
+              event => {
+
+                const targetId =
+                  link.getAttribute("href");
+
+                if (
+                  !targetId ||
+                  targetId === "#"
+                ) return;
+
+                const target =
+                  document.querySelector(targetId);
+
+                if (!target) return;
+
+                event.preventDefault();
+
+                target.scrollIntoView({
+
+                  behavior: "smooth",
+
+                  block: "start"
+
+                });
+
+              }
+            );
+
+          });
+
+
+        /* ===================================================
+           REVEAL ANIMATION
+           =================================================== */
+
+        let revealObserver;
+
+
+        function observeRevealElements() {
+
+          const elements =
+            document.querySelectorAll(
+              ".reveal:not(.revealed)"
+            );
+
+
+          if (!("IntersectionObserver" in window)) {
+
+            elements.forEach(element => {
+
+              element.classList.add(
+                "revealed"
+              );
+
+            });
+
+            return;
+
+          }
+
+
+          if (!revealObserver) {
+
+            revealObserver =
+              new IntersectionObserver(
+                entries => {
+
+                  entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                      entry.target.classList.add(
+                        "revealed"
+                      );
+
+                      revealObserver.unobserve(
+                        entry.target
+                      );
+
+                    }
+
+                  });
+
+                },
+                {
+                  threshold: 0.12
+                }
+              );
+
+          }
+
+
+          elements.forEach(element => {
+
+            revealObserver.observe(element);
+
+          });
+
+        }
+
+
+        observeRevealElements();
+
+
+        /* ===================================================
+           COUNTER ANIMATION
+           =================================================== */
+
+        const counters =
+          document.querySelectorAll(
+            "[data-count]"
+          );
+
+
+        let countersStarted = false;
+
+
+        function startCounters() {
+
+          if (countersStarted) return;
+
+          countersStarted = true;
+
+
+          counters.forEach(counter => {
+
+            const target =
+              Number(
+                counter.dataset.count
+              );
+
+            let current = 0;
+
+            const increment =
+              Math.max(
+                1,
+                Math.ceil(target / 35)
+              );
+
+
+            const timer =
+              setInterval(() => {
+
+                current += increment;
+
+                if (current >= target) {
+
+                  current = target;
+
+                  clearInterval(timer);
+
+                }
+
+                counter.textContent =
+                  current;
+
+              }, 35);
+
+          });
+
+        }
+
+
+        const statsSection =
+          document.querySelector(".stats");
+
+
+        if (
+          statsSection &&
+          "IntersectionObserver" in window
+        ) {
+
+          const statsObserver =
+            new IntersectionObserver(
+              entries => {
+
+                entries.forEach(entry => {
+
+                  if (entry.isIntersecting) {
+
+                    startCounters();
+
+                    statsObserver.disconnect();
+
+                  }
+
+                });
+
+              },
+              {
+                threshold: 0.25
+              }
+            );
+
+
+          statsObserver.observe(
+            statsSection
+          );
+
+        } else {
+
+          startCounters();
+
+        }
+
+
+        /* ===================================================
+           ENQUIRY FORM
+           =================================================== */
+
+        const enquiryForm =
+          document.getElementById(
+            "enquiryForm"
+          );
+
+
+        if (enquiryForm) {
+
+          enquiryForm.addEventListener(
+            "submit",
+            event => {
+
+              event.preventDefault();
+
+
+              const name =
+                document
+                  .getElementById("name")
+                  .value
+                  .trim();
+
+
+              const phone =
+                document
+                  .getElementById("phone")
+                  .value
+                  .trim();
+
+
+              const category =
+                document
+                  .getElementById("category")
+                  .value;
+
+
+              const message =
+                document
+                  .getElementById("message")
+                  .value
+                  .trim();
+
+
+              const whatsappMessage =
+                `Hello CITY KART,
+
+My name is ${name}.
+
+Phone: ${phone}
+
+Category: ${category}
+
+Message:
+${message}
+
+I would like to know more about the collection.`;
+
+
+              const url =
+                whatsappLink +
+                "?text=" +
+                encodeURIComponent(
+                  whatsappMessage
+                );
+
+
+              window.open(
+                url,
+                "_blank"
+              );
+
+            }
+          );
+
+        }
+
+
+        /* ===================================================
+           INITIAL PRODUCT LOAD
+           =================================================== */
+
+        renderProducts();
+
+      });
+
+    </script>
+
+  </body>
+
+</html>
