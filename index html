@@ -3558,3 +3558,274 @@ footer{
 
 
   </main>
+
+<!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+
+      /* =========================
+         CITY KART CONFIG
+      ========================== */
+
+      const CITY_KART = {
+
+        name: "CITY KART",
+
+        location: "Barharwa, Bihar",
+
+        phone: "8757342062",
+
+        whatsapp: "918757342062"
+
+      };
+
+
+      /* =========================
+         CURRENT YEAR
+      ========================== */
+
+      const currentYear =
+        document.getElementById("currentYear");
+
+      if (currentYear) {
+
+        currentYear.textContent =
+          new Date().getFullYear();
+
+      }
+
+
+      /* =========================
+         MOBILE MENU
+      ========================== */
+
+      const mobileMenu =
+        document.getElementById("mobileMenu");
+
+      const mobileMenuClose =
+        document.getElementById("mobileMenuClose");
+
+      const mobileNavLinks =
+        document.querySelectorAll(".mobile-nav a");
+
+      const menuToggle =
+        document.getElementById("menuToggle");
+
+
+      function openMobileMenu() {
+
+        if (!mobileMenu) return;
+
+        mobileMenu.classList.add("active");
+
+        mobileMenu.setAttribute(
+          "aria-hidden",
+          "false"
+        );
+
+        document.body.classList.add(
+          "menu-open"
+        );
+
+      }
+
+
+      function closeMobileMenu() {
+
+        if (!mobileMenu) return;
+
+        mobileMenu.classList.remove("active");
+
+        mobileMenu.setAttribute(
+          "aria-hidden",
+          "true"
+        );
+
+        document.body.classList.remove(
+          "menu-open"
+        );
+
+      }
+
+
+      if (menuToggle) {
+
+        menuToggle.addEventListener(
+          "click",
+          openMobileMenu
+        );
+
+      }
+
+
+      if (mobileMenuClose) {
+
+        mobileMenuClose.addEventListener(
+          "click",
+          closeMobileMenu
+        );
+
+      }
+
+
+      mobileNavLinks.forEach(function (link) {
+
+        link.addEventListener(
+          "click",
+          closeMobileMenu
+        );
+
+      });
+
+
+      /* =========================
+         FAQ ACCORDION
+      ========================== */
+
+      const faqQuestions =
+        document.querySelectorAll(
+          ".faq-question"
+        );
+
+
+      faqQuestions.forEach(function (question) {
+
+        question.addEventListener(
+          "click",
+          function () {
+
+            const item =
+              question.closest(".faq-item");
+
+            if (!item) return;
+
+            const answer =
+              item.querySelector(".faq-answer");
+
+            const icon =
+              question.querySelector(
+                "span:last-child"
+              );
+
+
+            const isOpen =
+              item.classList.contains("active");
+
+
+            document
+              .querySelectorAll(".faq-item")
+              .forEach(function (otherItem) {
+
+                if (otherItem !== item) {
+
+                  otherItem.classList.remove(
+                    "active"
+                  );
+
+                  const otherIcon =
+                    otherItem.querySelector(
+                      ".faq-question span:last-child"
+                    );
+
+                  if (otherIcon) {
+
+                    otherIcon.textContent = "+";
+
+                  }
+
+                }
+
+              });
+
+
+            if (isOpen) {
+
+              item.classList.remove(
+                "active"
+              );
+
+              if (icon) {
+
+                icon.textContent = "+";
+
+              }
+
+            } else {
+
+              item.classList.add(
+                "active"
+              );
+
+              if (icon) {
+
+                icon.textContent = "−";
+
+              }
+
+            }
+
+          }
+        );
+
+      });
+
+
+      /* =========================
+         CONTACT FORM
+      ========================== */
+
+      const contactForm =
+        document.getElementById("contactForm");
+
+
+      if (contactForm) {
+
+        contactForm.addEventListener(
+          "submit",
+          function (event) {
+
+            event.preventDefault();
+
+
+            const name =
+              document.getElementById(
+                "contactName"
+              )?.value.trim();
+
+
+            const phone =
+              document.getElementById(
+                "contactPhone"
+              )?.value.trim();
+
+
+            const category =
+              document.getElementById(
+                "contactCategory"
+              )?.value;
+
+
+            const message =
+              document.getElementById(
+                "contactMessage"
+              )?.value.trim();
+
+
+            if (!name || !phone || !message) {
+
+              alert(
+                "Please fill in all required fields."
+              );
+
+              return;
+
+            }
+
+
+            const whatsappMessage =
+              `Hello CITY KART,
